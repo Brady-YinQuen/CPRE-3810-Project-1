@@ -1,1 +1,0 @@
-/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 7029024 work.tb_extender -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 1-0050569bce40-67ad15eb-87da4-5020 +__design_bin_path+/home/choong/CPRE381/Lab2/Extender +__betafsm
