@@ -1,0 +1,128 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+!s12c _opt
+R1
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/choong/CPRE381/Lab2/Extender
+T_opt
+!s110 1739396523
+V]I8jR:m2Jg<R46<1FDUH41
+Z3 04 11 8 work tb_extender behavior 1
+=1-0050569bce40-67ad15ab-7e4d6-4ef2
+R1
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.2;79
+R2
+T_opt1
+!s110 1739396587
+V=g0ZW@f5Do[ehT_Bk]a?c1
+R3
+=1-0050569bce40-67ad15eb-87da4-5020
+R1
+R4
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+Eextender
+Z10 w1739380372
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R2
+Z13 8/home/choong/CPRE381/Lab2/Extender/Extender.vhd
+Z14 F/home/choong/CPRE381/Lab2/Extender/Extender.vhd
+l0
+L4 1
+V5a>ZnWAED>e;ZbE=IPakn1
+!s100 8>eHIJc29iaY;kPoJWfV`1
+Z15 OL;C;2024.2;79
+32
+Z16 !s110 1739396515
+!i10b 1
+Z17 !s108 1739396515.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/Extender/Extender.vhd|
+Z19 !s107 /home/choong/CPRE381/Lab2/Extender/Extender.vhd|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 CvgOpt 0
+Adataflow
+R11
+R12
+DEx4 work 8 extender 0 22 5a>ZnWAED>e;ZbE=IPakn1
+!i122 9
+l14
+L13 10
+VbI=`PHGdMeERAS0YGZ5e21
+!s100 P[EebKS<eVF@d2BQnONcK2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Etb_extender
+Z22 w1739396573
+R11
+R12
+!i122 10
+R2
+Z23 8/home/choong/CPRE381/Lab2/Extender/tb_extender.vhd
+Z24 F/home/choong/CPRE381/Lab2/Extender/tb_extender.vhd
+l0
+L4 1
+V@?d<?Y7TM07kG>eGzdj902
+!s100 >fag9A3ili125BPRGj<M:2
+R15
+32
+Z25 !s110 1739396579
+!i10b 1
+Z26 !s108 1739396579.000000
+Z27 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/Extender/tb_extender.vhd|
+Z28 !s107 /home/choong/CPRE381/Lab2/Extender/tb_extender.vhd|
+!i113 0
+R20
+R21
+Abehavior
+R11
+R12
+DEx4 work 11 tb_extender 0 22 @?d<?Y7TM07kG>eGzdj902
+!i122 10
+l20
+L7 39
+Vfizak2KRk:_C<HN[iIUZR3
+!s100 :<_Zn?3`B;eZHT_DPP13l2
+R15
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R20
+R21

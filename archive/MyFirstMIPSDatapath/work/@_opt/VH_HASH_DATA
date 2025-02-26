@@ -1,0 +1,33 @@
+[N
+4
+3
+8 behavior
+2
+22 myfirstmipsdatapath_tb
+1
+51 /home/choong/CPRE381/Lab2/adder_with_Immediate/work
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-106
+-104
+0
+0
+0
+0
+0
+0
+0
+]

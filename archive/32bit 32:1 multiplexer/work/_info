@@ -1,0 +1,139 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer
+T_opt
+!s110 1738800711
+V;VlK:LRGZ60gXOSOG2C[j1
+04 10 8 work mux32t1_tb behavior 1
+=1-7486e22835ea-67a3fe46-f0b30-4bde
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Emux32t1
+Z3 w1738800487
+Z4 DPx4 work 10 my_package 0 22 `:U:zX40dI_DG`fNS]>QI3
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+R2
+Z8 8/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1.vhd
+Z9 F/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1.vhd
+l0
+L7 1
+V=;U`ePDL^BAXDDFA;G?5i3
+!s100 jWzHJg_dhhJnEkXUe=I_F3
+Z10 OL;C;2024.2;79
+32
+Z11 !s110 1738800490
+!i10b 1
+Z12 !s108 1738800490.000000
+Z13 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1.vhd|
+Z14 !s107 /home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Adataflow
+R4
+R5
+R6
+R7
+DEx4 work 7 mux32t1 0 22 =;U`ePDL^BAXDDFA;G?5i3
+!i122 6
+l17
+L16 4
+VW8Le7ZF3=kgXZRIQI`2`C2
+!s100 GI1H:0ln1HK?=dkjWV5iD1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Emux32t1_tb
+Z17 w1738800697
+R4
+R6
+R7
+!i122 7
+R2
+Z18 8/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1_tb.vhd
+Z19 F/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1_tb.vhd
+l0
+L5 1
+Vc=30LMcTLnAiXXQAMXQkR1
+!s100 AcG7GVd9_U]jB^ZEi5:gD0
+R10
+32
+Z20 !s110 1738800703
+!i10b 1
+Z21 !s108 1738800703.000000
+Z22 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1_tb.vhd|
+Z23 !s107 /home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/mux32t1_tb.vhd|
+!i113 0
+R15
+R16
+Abehavior
+R4
+R6
+R7
+DEx4 work 10 mux32t1_tb 0 22 c=30LMcTLnAiXXQAMXQkR1
+!i122 7
+l22
+L8 35
+V>;;3aoZ[g]djCfUfDTBDz3
+!s100 H@CX08BL6@Yk;UgW2UM3O1
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R15
+R16
+Pmy_package
+R6
+R7
+!i122 0
+w1738800334
+R2
+8/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/my_package.vhd
+F/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/my_package.vhd
+l0
+L4 3
+V`:U:zX40dI_DG`fNS]>QI3
+!s100 Z<daeildYVaKCJ<mJl6N_3
+R10
+32
+!s110 1738800336
+!i10b 1
+!s108 1738800336.000000
+!s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/my_package.vhd|
+!s107 /home/choong/CPRE381/Lab2/32bit 32:1 multiplexer/my_package.vhd|
+!i113 0
+R15
+R16

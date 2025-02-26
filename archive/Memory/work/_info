@@ -1,0 +1,143 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/choong/CPRE381/Lab2/Memory
+T_opt
+!s110 1739246920
+VUkgW[?6Pn:ak25IHYb4bI1
+Z3 04 7 8 work tb_dmem behavior 1
+=1-0050569b0751-67aacd48-4ee8c-9911
+R1
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.2;79
+R2
+T_opt1
+!s110 1739248963
+V:X=;^;K=GQ@EEQXJIhmdF2
+R3
+=1-0050569b0751-67aad543-a6a72-a52e
+R1
+R4
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+R2
+Emem
+Z10 w1739240441
+Z11 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R2
+Z14 8/home/choong/CPRE381/Lab2/Memory/mem.vhd
+Z15 F/home/choong/CPRE381/Lab2/Memory/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+Z16 OL;C;2024.2;79
+32
+Z17 !s110 1739246738
+!i10b 1
+Z18 !s108 1739246738.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/Memory/mem.vhd|
+Z20 !s107 /home/choong/CPRE381/Lab2/Memory/mem.vhd|
+!i113 0
+Z21 o-work work
+Z22 tExplicit 1 CvgOpt 0
+Artl
+R11
+R12
+R13
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 0
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R16
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R21
+R22
+Etb_dmem
+Z23 w1739249274
+R11
+R12
+R13
+!i122 19
+R2
+Z24 8/home/choong/CPRE381/Lab2/Memory/tb-dmem.vhd
+Z25 F/home/choong/CPRE381/Lab2/Memory/tb-dmem.vhd
+l0
+L6 1
+VA1UOUg_5zPJE?ARMLCgkO2
+!s100 ]N^5LY5Dg5kN2DT?1cM_J1
+R16
+32
+!s110 1739249278
+!i10b 1
+!s108 1739249278.000000
+Z26 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/Memory/tb-dmem.vhd|
+Z27 !s107 /home/choong/CPRE381/Lab2/Memory/tb-dmem.vhd|
+!i113 0
+R21
+R22
+Abehavior
+R11
+R12
+R13
+DEx4 work 7 tb_dmem 0 22 A1UOUg_5zPJE?ARMLCgkO2
+!i122 18
+l33
+L14 72
+Vei05WGI>5`SZh7^QR[86P1
+!s100 9if;:FRabNYfo^eg2V>::1
+R16
+32
+!s110 1739248957
+!i10b 1
+!s108 1739248957.000000
+R26
+R27
+!i113 0
+R21
+R22

@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.my_package.all;
+
+entity mux32t1_tb is
+end entity mux32t1_tb;
+
+architecture behavior of mux32t1_tb is
+    component mux32t1 is
+        port(
+            i_d : in mux_bus;
+            i_s : in std_logic_vector(4 downto 0);
+            o_O : out std_logic_vector(31 downto 0)
+        );
+    end component mux32t1;
+
+
+    signal s_d : mux_bus;
+    signal s_s : std_logic_vector(4 downto 0);
+    signal s_O : std_logic_vector(31 downto 0);
+
+    begin
+        gmux : mux32t1
+        port map(
+            i_d => s_d,
+            i_s => s_s,
+            o_O => s_O
+        );
+
+        simulation: process
+        begin
+        s_d(0) <= x"11111111"; s_s <= "00000";s_d(1) <= x"22222222";s_d(10) <= x"AAAAAAAA";
+        wait for 10 ns;
+	s_s <= "00001";
+	wait for 10 ns;
+	s_s <= "01010";
+	wait for 10 ns;
+        wait; 
+        
+        end process simulation;
+
+end architecture behavior;

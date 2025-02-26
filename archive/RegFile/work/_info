@@ -1,0 +1,356 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/choong/CPRE381/Lab2/MIP register
+T_opt
+!s110 1738806549
+Vl_4hdVach7jJ`0dbC@fd50
+04 10 8 work mip_reg_tb behavior 1
+=1-7486e22835ea-67a41515-72bc3-6653
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eandg2
+Z3 w1737080929
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 13
+R2
+Z6 8/home/choong/CPRE381/Lab2/MIP register/andg2.vhd
+Z7 F/home/choong/CPRE381/Lab2/MIP register/andg2.vhd
+l0
+Z8 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+Z9 OL;C;2024.2;79
+32
+Z10 !s110 1738805195
+!i10b 1
+Z11 !s108 1738805195.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/andg2.vhd|
+Z13 !s107 /home/choong/CPRE381/Lab2/MIP register/andg2.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Adataflow
+R4
+R5
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 13
+l32
+L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edffg
+Z16 w1577987096
+R4
+R5
+!i122 14
+R2
+Z17 8/home/choong/CPRE381/Lab2/MIP register/dffg.vhd
+Z18 F/home/choong/CPRE381/Lab2/MIP register/dffg.vhd
+l0
+R8
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/dffg.vhd|
+Z20 !s107 /home/choong/CPRE381/Lab2/MIP register/dffg.vhd|
+!i113 0
+R14
+R15
+Amixed
+R4
+R5
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 14
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
+Emip_reg
+Z21 w1738806526
+Z22 DPx4 work 10 my_package 0 22 `:U:zX40dI_DG`fNS]>QI3
+Z23 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+R5
+!i122 45
+R2
+Z24 8/home/choong/CPRE381/Lab2/MIP register/MIP_REG.vhd
+Z25 F/home/choong/CPRE381/Lab2/MIP register/MIP_REG.vhd
+l0
+L6 1
+VYKYOU[5YGoMd@_gDG;fP]2
+!s100 ?53CoUj55=o5O2<QMJLeY0
+R9
+33
+Z26 !s110 1738806535
+!i10b 1
+Z27 !s108 1738806535.000000
+Z28 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/MIP_REG.vhd|
+Z29 !s107 /home/choong/CPRE381/Lab2/MIP register/MIP_REG.vhd|
+!i113 0
+R14
+Z30 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructural
+R22
+R23
+R4
+R5
+DEx4 work 7 mip_reg 0 22 YKYOU[5YGoMd@_gDG;fP]2
+!i122 45
+l59
+L20 91
+Vo6ZAMIjfL26dS8?9:gSIj0
+!s100 zKM[X?O5DCn[:cb3<eL]J0
+R9
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R14
+R30
+Emip_reg_tb
+Z31 w1738806216
+R22
+R4
+R5
+!i122 43
+R2
+Z32 8/home/choong/CPRE381/Lab2/MIP register/MIP_REG_tb.vhd
+Z33 F/home/choong/CPRE381/Lab2/MIP register/MIP_REG_tb.vhd
+l0
+L5 1
+VG>iGd9H@6ADjz>MoL740E3
+!s100 NP7XzTK`e<h;9ZFJ;=:Z81
+R9
+33
+Z34 !s110 1738806224
+!i10b 1
+Z35 !s108 1738806224.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/MIP_REG_tb.vhd|
+Z37 !s107 /home/choong/CPRE381/Lab2/MIP register/MIP_REG_tb.vhd|
+!i113 0
+R14
+R30
+Abehavior
+R22
+R4
+R5
+DEx4 work 10 mip_reg_tb 0 22 G>iGd9H@6ADjz>MoL740E3
+!i122 43
+l35
+L9 82
+Vedn7d7FlW8`P<fcXb0WPZ0
+!s100 LCzWZ1IYB6]F=oN:;z:jL1
+R9
+33
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R14
+R30
+Emux32t1
+Z38 w1738800487
+R22
+R23
+R4
+R5
+!i122 15
+R2
+Z39 8/home/choong/CPRE381/Lab2/MIP register/mux32t1.vhd
+Z40 F/home/choong/CPRE381/Lab2/MIP register/mux32t1.vhd
+l0
+L7 1
+V=;U`ePDL^BAXDDFA;G?5i3
+!s100 jWzHJg_dhhJnEkXUe=I_F3
+R9
+32
+R10
+!i10b 1
+R11
+Z41 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/mux32t1.vhd|
+Z42 !s107 /home/choong/CPRE381/Lab2/MIP register/mux32t1.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R22
+R23
+R4
+R5
+DEx4 work 7 mux32t1 0 22 =;U`ePDL^BAXDDFA;G?5i3
+!i122 15
+l17
+L16 4
+VW8Le7ZF3=kgXZRIQI`2`C2
+!s100 GI1H:0ln1HK?=dkjWV5iD1
+R9
+32
+R10
+!i10b 1
+R11
+R41
+R42
+!i113 0
+R14
+R15
+Pmy_package
+R4
+R5
+!i122 16
+w1738800334
+R2
+8/home/choong/CPRE381/Lab2/MIP register/my_package.vhd
+F/home/choong/CPRE381/Lab2/MIP register/my_package.vhd
+l0
+L4 3
+V`:U:zX40dI_DG`fNS]>QI3
+!s100 Z<daeildYVaKCJ<mJl6N_3
+R9
+32
+R10
+!i10b 1
+R11
+!s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/my_package.vhd|
+!s107 /home/choong/CPRE381/Lab2/MIP register/my_package.vhd|
+!i113 0
+R14
+R15
+En_decoder
+Z43 w1738797942
+Z44 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z45 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R4
+R5
+!i122 21
+R2
+Z46 8/home/choong/CPRE381/Lab2/MIP register/N_decoder.vhd
+Z47 F/home/choong/CPRE381/Lab2/MIP register/N_decoder.vhd
+l0
+L5 1
+VQd=k[JT4i6WM0fmWjN50g0
+!s100 l2cS]OC^HDVk12dKUP8Td1
+R9
+33
+Z48 !s110 1738805211
+!i10b 1
+Z49 !s108 1738805211.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/N_decoder.vhd|
+Z51 !s107 /home/choong/CPRE381/Lab2/MIP register/N_decoder.vhd|
+!i113 0
+R14
+R30
+Adataflow
+R44
+R45
+R4
+R5
+DEx4 work 9 n_decoder 0 22 Qd=k[JT4i6WM0fmWjN50g0
+!i122 21
+l14
+L13 39
+VNQIG2^jXE<nWkLC4CCeR[1
+!s100 3?XhG>5jX@oc3VX@h`L=G0
+R9
+33
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 0
+R14
+R30
+En_reg
+Z52 w1738774205
+R4
+R5
+!i122 18
+R2
+Z53 8/home/choong/CPRE381/Lab2/MIP register/N_Reg.vhd
+Z54 F/home/choong/CPRE381/Lab2/MIP register/N_Reg.vhd
+l0
+L4 1
+V5j0SSN`Q6fh@_T?^0FMkG1
+!s100 Ca[MgGKBcd`aKRzY3^QRI0
+R9
+32
+R10
+!i10b 1
+R11
+Z55 !s90 -reportprogress|300|-work|work|/home/choong/CPRE381/Lab2/MIP register/N_Reg.vhd|
+Z56 !s107 /home/choong/CPRE381/Lab2/MIP register/N_Reg.vhd|
+!i113 0
+R14
+R15
+Astructural
+R4
+R5
+DEx4 work 5 n_reg 0 22 5j0SSN`Q6fh@_T?^0FMkG1
+!i122 18
+l25
+L15 23
+VgbVL_[FXkU<I;[948`Qk=1
+!s100 MHTI4D8<745BMi_XQ;6bK0
+R9
+32
+R10
+!i10b 1
+R11
+R55
+R56
+!i113 0
+R14
+R15

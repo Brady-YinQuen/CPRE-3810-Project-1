@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 20398368 work.myfirstmipsdatapath_tb -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 1-0050569bce40-67aa7935-ef7b2-1bc83 +__design_bin_path+/home/choong/CPRE381/Lab2/adder_with_Immediate +__betafsm
