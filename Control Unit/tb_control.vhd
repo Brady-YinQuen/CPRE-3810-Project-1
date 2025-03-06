@@ -1,0 +1,221 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_control is
+end tb_control;
+
+
+architecture behavior of tb_control is
+
+    component control is port(
+        i_Opcode : in std_logic_vector(5 downto 0);
+        i_Funct : in std_logic_vector(5 downto 0);
+        o_ALUSrc : out std_logic;
+        o_ALUControl: out std_logic_vector(3 downto 0);
+        o_MemtoReg : out std_logic;
+        o_DMemWr : out std_logic;
+        o_RegWr : out std_logic;
+        o_RegDst : out std_logic
+    );
+    end component control;
+
+    signal s_Opcode : std_logic_vector(5 downto 0);
+    signal s_Funct : std_logic_vector(5 downto 0);
+    signal s_ALUSrc : std_logic;
+    signal s_ALUControl: std_logic_vector(3 downto 0);
+    signal s_MemtoReg : std_logic;
+    signal s_DMemWr : std_logic;
+    signal s_RegWr : std_logic;
+    signal s_RegDst : std_logic;
+
+begin 
+    test_control : control port map(
+        i_Opcode    => s_Opcode, 
+        i_Funct     => s_Funct,
+        o_ALUSrc    => s_ALUSrc,
+        o_ALUControl     => s_ALUControl,
+        o_MemtoReg  => s_MemtoReg,
+        o_DMemWr    => s_DMemWr,
+        o_RegWr     => s_RegWr,
+        o_RegDst    => s_RegDst
+    );
+    stimulus_process: process
+    begin 
+    -- Test case 1: addi
+    -- s_Opcode <= "001000";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- -- add 
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "010100";
+    -- wait for 10 ns;
+
+    -- --addiu
+    -- s_Opcode <= "001001";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --addu
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "010101";
+    -- wait for 10 ns;
+
+    -- --and
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "011000";
+    -- wait for 10 ns;
+
+    -- --andi
+    -- s_Opcode <= "001100";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --lui
+    -- s_Opcode <= "001111";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --lw
+    -- s_Opcode <= "100011";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --nor
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "100111";
+    -- wait for 10 ns;
+
+    -- --xor
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "100110";
+    -- wait for 10 ns;
+
+    -- --xori
+    -- s_Opcode <= "001110";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --or
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "100101";
+    -- wait for 10 ns;
+
+    -- --ori
+    -- s_Opcode <= "001101";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --slt
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "101010";
+    -- wait for 10 ns;
+
+    -- --slti
+    -- s_Opcode <= "001010";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --sll
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+    
+    -- --srl
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000010";
+    -- wait for 10 ns;
+
+    -- --sra
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000011";
+    -- wait for 10 ns;
+
+    -- --sw
+    -- s_Opcode <= "101011";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --sub
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "100010";
+    -- wait for 10 ns;
+
+    -- -- subu
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "100011";
+    -- wait for 10 ns;
+
+    -- --beq
+    -- s_Opcode <= "000100";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --bne
+    -- s_Opcode <= "000101";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --j
+    -- s_Opcode <= "000010";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --jal
+    -- s_Opcode <= "000011";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    --jr
+    s_Opcode <= "000000";
+    s_Funct <= "001000";
+    wait for 10 ns;
+
+    -- --lb
+    -- s_Opcode <= "100000";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --lh
+    -- s_Opcode <= "100001";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+
+    -- --lbu
+    -- s_Opcode <= "100100";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --lhu
+    -- s_Opcode <= "100101";
+    -- s_Funct <= "000000";
+    -- wait for 10 ns;
+
+    -- --sllv
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000100";
+    -- wait for 10 ns;
+
+    -- --srlv
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000110";
+    -- wait for 10 ns;
+
+    -- --srav
+    -- s_Opcode <= "000000";
+    -- s_Funct <= "000111" ;
+    -- wait for 10 ns;
+
+
+
+
+
+
+
+
+
+
+     wait;
+    end process stimulus_process;
+end architecture behavior;

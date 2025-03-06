@@ -92,8 +92,8 @@ o_RegWr  <= '0' when   (i_Opcode = "000000" and i_Funct = "001000") else
                     i_Opcode = "000011" else -- jal
                     '0';
 
-o_RegDst <= '0' when   (i_Opcode = "000000" and i_Funct = "001000") else
-            '1' when i_Opcode = "000000" else -- R-type (add, addu, and, or, etc.)
-            '0';
+o_RegDst <= --'1' when i_Opcode = "000000" else -- R-type (add, addu, and, or, etc.)
+	    '0' when   (i_Opcode = "000000" and i_Funct = "001000") else
+            '1';
 
 end dataflow;
