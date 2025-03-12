@@ -1,0 +1,71 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_fetchmodule is 
+end entity tb_fetchmodule;
+
+architecture behavior of tb_fetchmodule is 
+
+    component Fetchmodule is 
+        port(
+            i_pc :  in std_logic_vector(31 downto 0);
+            i_instruction :  in std_logic_vector(25 downto 0);
+            i_imm       :  in std_logic_vector(31 downto 0);
+            i_branch    : in std_logic; 
+            i_zero      : in std_logic; 
+            i_jump      : in std_logic; 
+            o_pc        : out std_logic_vector(31 downto 0)
+        );
+        end component Fetchmodule;
+
+        signal s_pc :std_logic_vector(31 downto 0);
+        signal s_instruction :std_logic_vector(25 downto 0);
+        signal s_imm : std_logic_vector(31 downto 0);
+        signal s_branch : std_logic;
+        signal s_zero : std_logic;
+        signal s_jump : std_logic;
+        signal s_output : std_logic_vector(31 downto 0);
+
+    begin 
+
+    
+    g_fetch : Fetchmodule
+    port map (
+        i_pc => s_pc,
+        i_instruction => s_instruction,
+        i_imm       =>  s_imm,
+        i_branch    => s_branch,
+        i_zero      => s_zero ,
+        i_jump      => s_jump,
+        o_pc       => s_output
+    );
+    
+    simulation: process
+    begin 
+
+
+    s_pc <= x"00000000";
+    s_instruction <= "00000000000000000000000000";
+    s_imm <= x"00000000";
+    s_branch <= '0';
+    s_zero <= '0';
+    s_jump <= '0';
+    wait for 10 ns;
+
+    s_pc <= x"00000000";
+    s_instruction <= "00000000111100001111000000";
+    s_imm <= x"00000000";
+    s_branch <= '0';
+    s_zero <= '0';
+    s_jump <= '1';
+
+    wait for 10 ns;
+
+    wait;
+
+
+
+    end process simulation; 
+
+
+end architecture behavior;
