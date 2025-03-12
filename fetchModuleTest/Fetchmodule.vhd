@@ -4,7 +4,8 @@ use IEEE.numeric_std.all;
 
 entity Fetchmodule is 
     port (
-        i_pc :  in std_logic_vector(31 downto 0);
+        i_CLK : in std_logic;  
+        i_RST : in std_logic;
         i_instruction :  in std_logic_vector(25 downto 0);
         i_imm       :  in std_logic_vector(31 downto 0);
         i_branch    : in std_logic; 
@@ -62,7 +63,19 @@ entity Fetchmodule is
                 o_F          : out std_logic
             );
             end component;
-        
+
+        component N_Reg is
+            port (
+                i_CLK        : in std_logic;  
+                i_RST        : in std_logic;
+                i_WE         : in std_logic;
+                i_D          : in std_logic_vector(31 downto 0);
+                o_Q          : out std_logic_vector(31 downto 0)
+            );
+            end component;
+            
+            signal s_pc_in : std_logic_vector(31 downto 0) := x"00400000";
+            signal s_pc_out : std_logic_vector(31 downto 0) := x"00400000";
             signal s_adder4 : std_logic_vector(31 downto 0);
             signal s_sll26  : std_logic_vector(27 downto 0);
             signal s_append : std_logic_vector(31 downto 0);
@@ -73,14 +86,23 @@ entity Fetchmodule is
             signal s_overflow1 : std_logic;
             signal s_overflow2 : std_logic;
 
+        
+
 
 
             begin
-	--o_pc<=s_branchmux;
+            g_pc : N_Reg
+            port MAP(
+                i_CLK        =>  i_CLK, 
+                i_RST        =>  i_RST,
+                i_WE         =>  '1',
+                i_D          => o_pc,
+                o_Q          => s_pc_out
+            );
 
             g_add4 : nAdder_Sub 
             port MAP(
-                i_A => i_pc,
+                i_A => s_pc_out,
                 i_B => x"00000004",
                 i_C => '0',
                 i_s => s_adder4,

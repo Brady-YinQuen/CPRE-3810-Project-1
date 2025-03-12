@@ -1,0 +1,86 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+cd /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest
+# reading modelsim.ini
+vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:43:36 on Mar 12,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(5): (vcom-1615) Existing entity 'Fetchmodule' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(5) will be overwritten.
+# -- Compiling entity Fetchmodule
+# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(18): (vcom-1615) Existing architecture 'Fetchmodule(structural)' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(17) will be overwritten.
+# -- Compiling architecture structural of Fetchmodule
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): (vcom-1136) Unknown identifier "N".
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): Type error in range expression.
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): (vcom-1136) Unknown identifier "N".
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): Type error in range expression.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(165): VHDL Compiler exiting
+# End time: 17:43:36 on Mar 12,2025, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 2
+vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:43:57 on Mar 12,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(18): (vcom-1615) Existing architecture 'Fetchmodule(structural)' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(17) will be overwritten.
+# -- Compiling architecture structural of Fetchmodule
+# End time: 17:43:57 on Mar 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:44:45 on Mar 12,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 17:44:45 on Mar 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:44:46 on Mar 12,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 17:44:46 on Mar 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:44:46 on Mar 12,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 17:44:46 on Mar 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
