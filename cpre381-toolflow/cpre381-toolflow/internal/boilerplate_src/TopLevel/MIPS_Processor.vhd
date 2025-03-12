@@ -69,6 +69,63 @@ architecture structure of MIPS_Processor is
 
   -- TODO: You may add any additional signals or components your implementation 
   --       requires below this comment
+  component MIP_REG is 
+  port(
+        i_rs : in std_logic_vector(4 downto 0);
+        i_rt : in std_logic_vector(4 downto 0);
+        i_rd : in std_logic_vector(4 downto 0);
+        i_d  : in std_logic_vector(31 downto 0);
+        i_reset : in std_logic;  
+        i_clock : in std_logic;  
+        i_we    : in std_logic;
+        o_D1    : out std_logic_vector(31 downto 0);
+        o_D2    : out std_logic_vector(31 downto 0)
+  );
+  end component;
+
+
+  component mux2t1_N is
+    port(
+        i_S          : in std_logic;
+        i_D0         : in std_logic_vector(31 downto 0);
+        i_D1         : in std_logic_vector(31 downto 0);
+        o_O          : out std_logic_vector(31 downto 0)
+    );
+    end component;
+
+  component Extender is 
+    port(
+        i_imm        : in std_logic_vector(15 downto 0);    
+        i_sign       : in  std_logic;
+        o_O          : out std_logic_vector(31 downto 0)
+    );  
+    end component;
+
+  component control is 
+    port(
+        i_Opcode : in std_logic_vector(5 downto 0);
+        i_Funct : in std_logic_vector(5 downto 0);
+        o_ALUSrc : out std_logic;
+        o_ALUControl: out std_logic_vector(3 downto 0);
+        o_MemtoReg : out std_logic;
+        o_DMemWr : out std_logic;
+        o_RegWr : out std_logic;
+        o_RegDst : out std_logic
+    );
+    end component control;
+
+  
+  component Fetchmodule is 
+    port(
+        i_pc :  in std_logic_vector(31 downto 0);
+        i_instruction :  in std_logic_vector(25 downto 0);
+        i_imm       :  in std_logic_vector(31 downto 0);
+        i_branch    : in std_logic; 
+        i_zero      : in std_logic; 
+        i_jump      : in std_logic; 
+        o_pc        : out std_logic_vector(31 downto 0)
+    );
+    end component Fetchmodule;
 
 begin
 
@@ -95,6 +152,8 @@ begin
              data => s_DMemData,
              we   => s_DMemWr,
              q    => s_DMemOut);
+
+  
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
   -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
