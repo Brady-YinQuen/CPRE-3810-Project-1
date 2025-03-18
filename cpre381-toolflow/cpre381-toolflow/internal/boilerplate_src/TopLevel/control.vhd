@@ -4,14 +4,17 @@ use IEEE.std_logic_unsigned.all;
 
 entity control is
     port(
-        i_Opcode : in std_logic_vector(5 downto 0);
-        i_Funct : in std_logic_vector(5 downto 0);
-        o_ALUSrc : out std_logic;
-        o_ALUControl: out std_logic_vector(3 downto 0);
-        o_MemtoReg : out std_logic;
-        o_DMemWr : out std_logic;
-        o_RegWr : out std_logic;
-        o_RegDst : out std_logic
+        i_Opcode    :   in std_logic_vector(5 downto 0);
+        i_Funct     :   in std_logic_vector(5 downto 0);
+        o_ALUSrc    :   out std_logic;
+        o_ALUControl:   out std_logic_vector(3 downto 0);
+        o_MemtoReg  :   out std_logic;
+        o_DMemWr    :   out std_logic;
+        o_RegWr     :   out std_logic;
+        o_RegDst    :   out std_logic;
+        o_RegJump   :   out std_logic;
+        o_Jump      :   out std_logic;
+        o_Branch    :   out std_logic
     );
 end control;
 
@@ -94,6 +97,19 @@ o_RegWr  <= '0' when   (i_Opcode = "000000" and i_Funct = "001000") else
 
 o_RegDst <= '0' when   (i_Opcode = "000000" and i_Funct = "001000") else
             '1' when i_Opcode = "000000" else -- R-type (add, addu, and, or, etc.)
+            '0';
+
+o_RegJump <= '1' when  (i_Opcode = "000000" and i_Funct = "001000") else 
+             '0';
+
+o_Jump    <= '1' when  (i_Opcode = "000000" and i_Funct = "001000" ) or
+                       i_Opcode = "000011" or 
+                       i_Opcode = "000010" else
+             '0';
+
+
+o_Branch <= '1' when i_Opcode = "000100" or -- beq
+                     i_Opcode = "000101" else -- bne
             '0';
 
 end dataflow;

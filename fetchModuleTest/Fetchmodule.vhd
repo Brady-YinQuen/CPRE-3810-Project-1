@@ -11,6 +11,8 @@ entity Fetchmodule is
         i_branch    : in std_logic; 
         i_zero      : in std_logic; 
         i_jump      : in std_logic; 
+        i_RegJump   : in std_logic; 
+        i_rs        : in std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
     end Fetchmodule;
@@ -83,6 +85,7 @@ entity Fetchmodule is
             signal s_adderbranch : std_logic_vector(31 downto 0);
             signal s_branchmux :  std_logic_vector(31 downto 0);
             signal s_and : std_logic;
+            signal s_jumpmux: std_logic_vector(31 downto 0);
             signal s_overflow1 : std_logic;
             signal s_overflow2 : std_logic;
 
@@ -157,6 +160,14 @@ entity Fetchmodule is
                 i_S => i_jump,
                 i_D0 => s_branchmux,
                 i_D1 => s_append,
+                o_O => s_jumpmux
+            );
+
+            g_RegJump : mux2t1_N
+            port MAP(
+                i_S => i_RegJump,
+                i_D0 => s_jumpmux,
+                i_D1 => i_rs,
                 o_O => o_pc
             );
 

@@ -56,6 +56,32 @@ architecture structure of MIPS_Processor is
   -- Required overflow signal -- for overflow exception detection
   signal s_Ovfl         : std_logic;  -- TODO: this signal indicates an overflow exception would have been initiated
 
+  signal s_extended     : std_logic_vector(N-1 downto 0) ;
+  signal s_branch       : std_logic ; 
+  signal s_zero         : std_logic ; 
+  signal s_jump         : std_logic ;
+  signal s_RegJump      : std_logic ;
+  signal s_ALUSrc       : std_logic;
+  signal s_ALUControl   : std_logic_vector(3 downto 0);
+  signal s_memtoReg     : std_logic;
+  signal s_RegDst       : std_logic;
+  signal s_signExtend   : std_logic := '0' ;
+
+  signal s_ALUDATA : std_logic_vector(N-1 downto 0) ;
+
+  signal s_rdMUX : std_logic_vector(4 downto 0);
+  
+
+
+  signal s_rt : std_logic_vector(N-1 downto 0) ;
+  signal s_rs : std_logic_vector(N-1 downto 0) ;
+
+
+
+  signal s_ALUin2 : std_logic_vector(N-1 downto 0) ;
+
+
+
   component mem is
     generic(ADDR_WIDTH : integer;
             DATA_WIDTH : integer);
@@ -93,6 +119,25 @@ architecture structure of MIPS_Processor is
     );
     end component;
 
+  component mux2to1_5bit is
+    port(
+        i_S          : in std_logic;
+        i_D0         : in std_logic_vector(4 downto 0);
+        i_D1         : in std_logic_vector(4 downto 0);
+        o_O          : out std_logic_vector(4 downto 0)
+    );
+    end component;
+  
+  component nAdder_Sub is 
+    port(
+        i_A, i_B: in  std_logic_vector(31 downto 0);       
+        i_C : in std_logic;                                 
+        i_S : out std_logic_vector(31 downto 0);            
+        i_C_out : out std_logic                              
+    );
+    end component;
+    
+
   component Extender is 
     port(
         i_imm        : in std_logic_vector(15 downto 0);    
@@ -110,19 +155,25 @@ architecture structure of MIPS_Processor is
         o_MemtoReg : out std_logic;
         o_DMemWr : out std_logic;
         o_RegWr : out std_logic;
-        o_RegDst : out std_logic
+        o_RegDst : out std_logic;
+        o_RegJump   :   out std_logic;
+        o_Jump      :   out std_logic;
+        o_Branch    :   out std_logic
     );
     end component control;
 
   
   component Fetchmodule is 
     port(
-        i_pc :  in std_logic_vector(31 downto 0);
+        i_CLK : in std_logic;  
+        i_RST : in std_logic;
         i_instruction :  in std_logic_vector(25 downto 0);
         i_imm       :  in std_logic_vector(31 downto 0);
         i_branch    : in std_logic; 
         i_zero      : in std_logic; 
         i_jump      : in std_logic; 
+        i_RegJump   : in std_logic; 
+        i_rs        : in std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
     end component Fetchmodule;
@@ -153,7 +204,80 @@ begin
              we   => s_DMemWr,
              q    => s_DMemOut);
 
-  
+  Fetch: Fetchmodule
+    port map(
+        i_CLK => iCLK, 
+        i_RST => iRST,
+        i_instruction =>  s_Inst (25 downto 0),
+        i_imm       =>   s_extended,
+        i_branch    => s_branch, 
+        i_zero      => '0',-- s_zero
+        i_jump      => s_jump,
+        i_RegJump   => s_RegJump,
+        i_rs        => s_rs
+       -- o_pc        => out std_logic_vector(31 downto 0)
+    );
+
+  controlModule: control
+    port map(
+        i_Opcode => s_Inst (31 downto 26),
+        i_Funct => s_Inst (5 downto 0),
+        o_ALUSrc => s_ALUSrc,
+        o_ALUControl=> s_ALUControl,
+        o_MemtoReg =>  s_memtoReg, 
+        o_DMemWr => s_DMemWr,
+        o_RegWr => s_RegWr,
+        o_RegDst => s_RegDst,
+        o_RegJump   => s_RegJump,
+        o_Jump      => s_jump,
+        o_Branch    => s_branch
+    );
+
+    extenderModule : Extender
+      port map(
+        i_imm        => s_Inst (15 downto 0), 
+        i_sign       => s_signExtend,
+        o_O          => s_extended 
+      );
+
+    SourceMUX : mux2t1_N
+      port map(
+        i_S          => s_ALUSrc,
+        i_D0         => s_rt,
+        i_D1         => s_extended,
+        o_O          => s_ALUin2
+      );
+    
+    RegDesMUX : mux2to1_5bit 
+    port map (
+      i_S          => s_RegDst,
+      i_D0         => s_Inst(20 downto 16),
+      i_D1         => s_Inst(15 downto 11),
+      o_O          => s_rdMUX
+    ); 
+
+    MainRegister : MIP_REG
+      port map(
+        i_rs =>   s_Inst(25 downto 21),
+        i_rt =>   s_Inst(20 downto 16),
+        i_rd =>   s_rdMUX,
+        i_d  =>   s_ALUDATA,
+        i_reset => iRST,
+        i_clock => iCLK,
+        i_we    => s_RegWr,
+        o_D1    => s_rs,
+        o_D2    => s_rt
+      );
+
+    MainALU : nAdder_Sub
+    port map(
+      i_A => s_rs,
+      i_B => s_ALUin2,
+      i_C => '0',
+      i_s => oALUOut,
+      i_C_out => s_Ovfl
+    );
+
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
   -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU

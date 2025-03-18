@@ -15,7 +15,10 @@ architecture behavior of tb_control is
         o_MemtoReg : out std_logic;
         o_DMemWr : out std_logic;
         o_RegWr : out std_logic;
-        o_RegDst : out std_logic
+        o_RegDst : out std_logic;
+        o_RegJump   :   out std_logic;
+        o_Jump      :   out std_logic;
+        o_Branch    :   out std_logic
     );
     end component control;
 
@@ -27,6 +30,10 @@ architecture behavior of tb_control is
     signal s_DMemWr : std_logic;
     signal s_RegWr : std_logic;
     signal s_RegDst : std_logic;
+    signal s_RegJump : std_logic; 
+    signal s_Jump : std_logic; 
+    signal s_Branch :  std_logic;
+    
 
 begin 
     test_control : control port map(
@@ -37,7 +44,10 @@ begin
         o_MemtoReg  => s_MemtoReg,
         o_DMemWr    => s_DMemWr,
         o_RegWr     => s_RegWr,
-        o_RegDst    => s_RegDst
+        o_RegDst    => s_RegDst,
+	o_RegJump=>s_RegJump,
+	o_Jump=>s_Jump,
+	o_Branch =>s_Branch
     );
     stimulus_process: process
     begin 
@@ -146,27 +156,27 @@ begin
     -- s_Funct <= "100011";
     -- wait for 10 ns;
 
-    -- --beq
-    -- s_Opcode <= "000100";
-    -- s_Funct <= "000000";
-    -- wait for 10 ns;
+    --beq
+    s_Opcode <= "000100";
+    s_Funct <= "000000";
+    wait for 10 ns;
 
-    -- --bne
-    -- s_Opcode <= "000101";
-    -- s_Funct <= "000000";
-    -- wait for 10 ns;
+    --bne
+    s_Opcode <= "000101";
+    s_Funct <= "000000";
+    wait for 10 ns;
 
     -- --j
-    -- s_Opcode <= "000010";
-    -- s_Funct <= "000000";
-    -- wait for 10 ns;
+    s_Opcode <= "000010";
+    s_Funct <= "000000";
+    wait for 10 ns;
 
     -- --jal
-    -- s_Opcode <= "000011";
-    -- s_Funct <= "000000";
-    -- wait for 10 ns;
+    s_Opcode <= "000011";
+    s_Funct <= "000000";
+    wait for 10 ns;
 
-    --jr
+    -- --jr
     s_Opcode <= "000000";
     s_Funct <= "001000";
     wait for 10 ns;
