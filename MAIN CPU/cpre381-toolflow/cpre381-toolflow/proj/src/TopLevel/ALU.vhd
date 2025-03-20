@@ -138,7 +138,7 @@ entity ALU is
         s_mux_input(10) <= s_shifter;
         s_mux_input(11) <= s_shifter;
         s_mux_input(12) <= s_nor;
-        s_mux_input(14) <= std_logic_vector(shift_left(unsigned(i_input1), 16));
+        s_mux_input(14) <= std_logic_vector(shift_left(unsigned(i_input2), 16));
         s_mux_input(15) <= s_xor;
 
 

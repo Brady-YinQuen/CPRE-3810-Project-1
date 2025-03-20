@@ -17,6 +17,7 @@ entity control is
         o_signExtend:   out std_logic;
         o_overflowEN:   out std_logic;
         o_shiftRegEN:   out std_logic;
+        o_BranchBNE :   out std_logic;
         o_halt      :   out std_logic;
         o_Branch    :   out std_logic
     );
@@ -25,26 +26,39 @@ end control;
 architecture dataflow of control is
 begin
 
-o_signExtend <= '0' when   i_Opcode = "001001" or 
-                            (i_Opcode = "000000" and i_Funct = "010101") or 
+o_signExtend <= '0' when   -- i_Opcode = "001001" or                           -- addiu
+                            (i_Opcode = "000000" and i_Funct = "100001") or --addu
                             (i_Opcode = "000000" and i_Funct = "100011") or 
+                            (i_Opcode = "000000" and i_Funct = "100110") or -- xor
+                            i_Opcode = "001110" or  -- xori
                              i_Opcode = "100100" or 
                              i_Opcode = "100101" or 
+                             i_Opcode = "001101" or  -- ori
+                             i_Opcode = "001100" or  -- andi
                              i_Opcode = "100101" else 
                              '1';
 
 o_overflowEN <= '0' when   i_Opcode = "001001" or 
-                            (i_Opcode = "000000" and i_Funct = "010101") or 
+                            (i_Opcode = "000000" and i_Funct ="100111") or -- nor
+                            (i_Opcode = "000000" and i_Funct = "100001") or --addu
                             (i_Opcode = "000000" and i_Funct = "100011") or 
+                            (i_Opcode = "000000" and i_Funct = "100100") or -- and
+                            (i_Opcode = "000000" and i_Funct = "100101") or -- or
                             i_Opcode = "100100" or 
                             i_Opcode = "100101" or 
+                            (i_Opcode = "000000" and i_Funct = "100110") or -- xor
+                            i_Opcode = "001110" or  -- xori
+                            i_Opcode = "001101" or  -- ori
                             i_Opcode = "100101" else 
                             '1';
 o_shiftRegEN <= '1' when   (i_Opcode = "000000" and i_Funct = "000100") or 
                             (i_Opcode = "000000" and i_Funct = "000110") or 
                             (i_Opcode = "000000" and i_Funct = "000111") else 
                             '0';
-                            
+
+
+o_BranchBNE <= '1' when     i_Opcode = "000101" else -- bne        
+                            '0';                
 
 
                            
@@ -65,9 +79,9 @@ o_ALUSrc <= '1' when  i_Opcode = "001000" or  -- addi
                     '0';
 
 o_ALUControl  <= "0010"  when i_Opcode = "001000" or -- addi
-                         (i_Opcode = "000000" and  i_Funct = "010100") or --add
+                         (i_Opcode = "000000" and  i_Funct = "100000") or --add
                          i_Opcode = "001001" or --addiu
-                         (i_Opcode = "000000" and i_Funct = "010101") or --addu
+                         (i_Opcode = "000000" and i_Funct = "100001") or --addu
                          i_Opcode = "100011" or -- lw
                          i_Opcode = "101011" or -- sw
                          i_Opcode = "100000" or -- lb

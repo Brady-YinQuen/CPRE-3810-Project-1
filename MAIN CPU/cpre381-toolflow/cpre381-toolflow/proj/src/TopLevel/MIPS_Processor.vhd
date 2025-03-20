@@ -68,6 +68,7 @@ architecture structure of MIPS_Processor is
   signal s_signExtend   : std_logic := '0' ;
   signal s_overflowEN   : std_logic;
   signal s_shiftregEN   : std_logic;
+  signal s_BranchBNE    : std_logic;
 
   signal s_ALUDATA : std_logic_vector(N-1 downto 0) ;
 
@@ -163,6 +164,7 @@ architecture structure of MIPS_Processor is
         o_signExtend:   out std_logic;
         o_overflowEN:   out std_logic;
         o_shiftRegEN:   out std_logic;
+        o_BranchBNE :   out std_logic;
         o_halt      :   out std_logic;
         o_Branch    :   out std_logic
     );
@@ -179,6 +181,7 @@ architecture structure of MIPS_Processor is
         i_zero      : in std_logic; 
         i_jump      : in std_logic; 
         i_RegJump   : in std_logic; 
+        i_BNE       : in std_logic; 
         i_rs        : in std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
@@ -235,6 +238,7 @@ begin
         i_zero      => s_zero , 
         i_jump      => s_jump,
         i_RegJump   => s_RegJump,
+        i_BNE       => s_BranchBNE,
         i_rs        => s_rs,
         o_pc        => s_NextInstAddr
     );
@@ -254,6 +258,7 @@ begin
         o_signExtend => s_signExtend,
         o_overflowEN => s_overflowEn,
         o_shiftRegEN => s_shiftRegEn,
+        o_BranchBNE  => s_BranchBNE,
         o_halt      => s_halt,
         o_Branch    => s_branch
     );
