@@ -14,6 +14,7 @@ entity Fetchmodule is
         i_RegJump   : in std_logic; 
         i_BNE       : in std_logic; 
         i_rs        : in std_logic_vector(31 downto 0);
+        o_pcNew     : out std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
     end Fetchmodule;
@@ -225,6 +226,7 @@ entity Fetchmodule is
             );
 
                 o_pc <= s_pc_out;
+                o_pcNew  <= s_adder4;
 
             end architecture structural;
 

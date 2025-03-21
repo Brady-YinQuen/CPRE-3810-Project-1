@@ -18,6 +18,7 @@ entity control is
         o_overflowEN:   out std_logic;
         o_shiftRegEN:   out std_logic;
         o_BranchBNE :   out std_logic;
+        o_JumpLink  :   out std_logic;
         o_halt      :   out std_logic;
         o_Branch    :   out std_logic
     );
@@ -44,6 +45,7 @@ o_overflowEN <= '0' when   i_Opcode = "001001" or
                             (i_Opcode = "000000" and i_Funct = "100011") or 
                             (i_Opcode = "000000" and i_Funct = "100100") or -- and
                             (i_Opcode = "000000" and i_Funct = "100101") or -- or
+                            (i_Opcode = "000000" and i_Funct = "000011") or --sra
                             i_Opcode = "100100" or 
                             i_Opcode = "100101" or 
                             (i_Opcode = "000000" and i_Funct = "100110") or -- xor
@@ -59,6 +61,10 @@ o_shiftRegEN <= '1' when   (i_Opcode = "000000" and i_Funct = "000100") or
 
 o_BranchBNE <= '1' when     i_Opcode = "000101" else -- bne        
                             '0';                
+
+
+o_JumpLink <= '1'   when i_Opcode = "000011" else -- jal
+                            '0';
 
 
                            

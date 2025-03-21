@@ -19,7 +19,7 @@ entity ALU is
 
     architecture structural of ALU is
         
-        component mux2to1_N is
+        component mux2t1_N is
             port(
                 i_S          : in std_logic;
                 i_D0         : in std_logic_vector(31 downto 0);
@@ -28,12 +28,13 @@ entity ALU is
             );
             end component;
         
-        component N_decoder is 
+        component shmtTo32Decoder is 
             port(
                 i_sel : in std_logic_vector(4 downto 0);
                 o_O   : out std_logic_vector(31 downto 0)
             );
             end component; 
+
         
         component Shifter is 
             port(
@@ -184,13 +185,13 @@ entity ALU is
             o_F => s_nor
         );
 
-        g_decoder : N_decoder
+        g_decoder : shmtTo32Decoder
         port MAP(
             i_sel => i_shmt,
             o_O   => s_decoder
         );
 
-        g_MuxShift : mux2to1_N
+        g_MuxShifter : mux2t1_N
         port MAP(
             i_S =>  i_shiftregEN,
             i_D0 => s_decoder,
@@ -201,7 +202,7 @@ entity ALU is
         g_shifter : Shifter
         port map(
             i_shiftamount   => s_shiftamount,
-            i_data          => i_input1,
+            i_data          => i_input2,
             i_shiftleft     => i_control(1),
             i_arithmetic    => i_control(0),
             o_data          => s_shifter

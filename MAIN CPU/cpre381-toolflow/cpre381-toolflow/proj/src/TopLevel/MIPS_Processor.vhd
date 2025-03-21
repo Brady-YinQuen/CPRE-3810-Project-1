@@ -65,6 +65,7 @@ architecture structure of MIPS_Processor is
   signal s_ALUControl   : std_logic_vector(3 downto 0);
   signal s_memtoReg     : std_logic;
   signal s_RegDst       : std_logic;
+  signal s_JumpLink     : std_logic;
   signal s_signExtend   : std_logic := '0' ;
   signal s_overflowEN   : std_logic;
   signal s_shiftregEN   : std_logic;
@@ -73,11 +74,14 @@ architecture structure of MIPS_Processor is
   signal s_ALUDATA : std_logic_vector(N-1 downto 0) ;
 
   signal s_rdMUX : std_logic_vector(4 downto 0);
+
   
+  signal s_muxMemAlu: std_logic_vector(N-1 downto 0);
 
 
   signal s_rt : std_logic_vector(N-1 downto 0) ;
   signal s_rs : std_logic_vector(N-1 downto 0) ;
+  signal s_newPc: std_logic_vector(N-1 downto 0) ;
 
 
 
@@ -165,6 +169,7 @@ architecture structure of MIPS_Processor is
         o_overflowEN:   out std_logic;
         o_shiftRegEN:   out std_logic;
         o_BranchBNE :   out std_logic;
+        o_JumpLink  :   out std_logic;
         o_halt      :   out std_logic;
         o_Branch    :   out std_logic
     );
@@ -183,6 +188,7 @@ architecture structure of MIPS_Processor is
         i_RegJump   : in std_logic; 
         i_BNE       : in std_logic; 
         i_rs        : in std_logic_vector(31 downto 0);
+        o_pcNew     : out std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
     end component Fetchmodule;
@@ -240,6 +246,7 @@ begin
         i_RegJump   => s_RegJump,
         i_BNE       => s_BranchBNE,
         i_rs        => s_rs,
+        o_pcNew     => s_newPc,
         o_pc        => s_NextInstAddr
     );
 
@@ -259,6 +266,7 @@ begin
         o_overflowEN => s_overflowEn,
         o_shiftRegEN => s_shiftRegEn,
         o_BranchBNE  => s_BranchBNE,
+        o_JumpLink  => s_JumpLink,
         o_halt      => s_halt,
         o_Branch    => s_branch
     );
@@ -283,6 +291,14 @@ begin
       i_S          => s_RegDst,
       i_D0         => s_Inst(20 downto 16),
       i_D1         => s_Inst(15 downto 11),
+      o_O          => s_rdMUX 
+    ); 
+
+    RegDesJALMUX : mux2to1_5bit 
+    port map (
+      i_S          => s_JumpLink,
+      i_D0         => s_rdMUX,
+      i_D1         => "11111",
       o_O          => s_RegWrAddr
     ); 
 
@@ -318,6 +334,14 @@ begin
       i_S          => s_memtoReg,
       i_D0         => s_ALUDATA,
       i_D1         => s_DMemOut,
+      o_O          => s_muxMemAlu
+    );
+
+    JumpLinkMUX : mux2t1_N
+    port map(
+      i_S          => s_JumpLink,
+      i_D0         => s_muxMemAlu,
+      i_D1         => s_newPc,
       o_O          => s_RegWrData
     );
 

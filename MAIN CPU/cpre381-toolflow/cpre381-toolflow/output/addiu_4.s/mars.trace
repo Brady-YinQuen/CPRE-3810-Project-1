@@ -1,6 +1,0 @@
-[inst #1] lui $8,273
-Register Write to Reg: 0x08 Val: 0x01110000
-[inst #2] addiu $8,$8,273
-Register Write to Reg: 0x08 Val: 0x01110111
-[inst #3] halt 
-

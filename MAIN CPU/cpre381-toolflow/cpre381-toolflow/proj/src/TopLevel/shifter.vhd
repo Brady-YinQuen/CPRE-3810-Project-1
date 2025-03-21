@@ -18,7 +18,7 @@ architecture structural of Shifter is
     begin
         process (i_shiftamount, i_data, i_shiftleft, i_arithmetic )
         begin 
-            if i_shiftleft = '1' then 
+            if i_shiftleft = '0' then 
             o_data <= std_logic_vector(shift_left(unsigned(i_data),to_integer(unsigned(i_shiftamount)))); 
             else 
                 if i_arithmetic = '0'then 
