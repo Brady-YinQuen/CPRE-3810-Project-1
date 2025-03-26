@@ -1,0 +1,181 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Mar 26 16:39:39 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off toolflow -c toolflow
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 0 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd
+    Info (12022): Found design unit 1: MIPS_types File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd Line: 15
+    Info (12022): Found design unit 2: MIPS_types-body File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/5BitTo32Decoder.vhd
+    Info (12022): Found design unit 1: shmtTo32Decoder-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/5BitTo32Decoder.vhd Line: 13
+    Info (12023): Found entity 1: shmtTo32Decoder File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/5BitTo32Decoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd
+    Info (12022): Found design unit 1: ALU-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 20
+    Info (12023): Found entity 1: ALU File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+    Info (12022): Found design unit 1: Adder-structure File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd Line: 13
+    Info (12023): Found entity 1: Adder File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd
+    Info (12022): Found design unit 1: Adder_N-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd Line: 15
+    Info (12023): Found entity 1: Adder_N File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Append.vhd
+    Info (12022): Found design unit 1: Append-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Append.vhd Line: 14
+    Info (12023): Found entity 1: Append File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Append.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Extender.vhd
+    Info (12022): Found design unit 1: Extender-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Extender.vhd Line: 12
+    Info (12023): Found entity 1: Extender File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Extender.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd
+    Info (12022): Found design unit 1: Fetchmodule-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 22
+    Info (12023): Found entity 1: Fetchmodule File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+    Info (12022): Found design unit 1: MIPS_Processor-structure File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 35
+    Info (12023): Found entity 1: MIPS_Processor File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd
+    Info (12022): Found design unit 1: MIP_REG-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd Line: 20
+    Info (12023): Found entity 1: MIP_REG File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MySecondMIPSDatapath.vhd
+    Info (12022): Found design unit 1: MySecondMIPSDatapath-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MySecondMIPSDatapath.vhd Line: 26
+    Info (12023): Found entity 1: MySecondMIPSDatapath File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MySecondMIPSDatapath.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd
+    Info (12022): Found design unit 1: N_Reg-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd Line: 17
+    Info (12023): Found entity 1: N_Reg File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_decoder.vhd
+    Info (12022): Found design unit 1: N_decoder-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_decoder.vhd Line: 13
+    Info (12023): Found entity 1: N_decoder File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_decoder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/OnesComp.vhd
+    Info (12022): Found design unit 1: OnesComp-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/OnesComp.vhd Line: 12
+    Info (12023): Found entity 1: OnesComp File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/OnesComp.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL26bTo28b.vhd
+    Info (12022): Found design unit 1: SLL26bTo28b-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL26bTo28b.vhd Line: 13
+    Info (12023): Found entity 1: SLL26bTo28b File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL26bTo28b.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL2_32bit.vhd
+    Info (12022): Found design unit 1: SLL2_32bit-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL2_32bit.vhd Line: 13
+    Info (12023): Found entity 1: SLL2_32bit File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL2_32bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ZeroFlag.vhd
+    Info (12022): Found design unit 1: ZeroFlag-Dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ZeroFlag.vhd Line: 11
+    Info (12023): Found entity 1: ZeroFlag File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ZeroFlag.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/addsub_i.vhd
+    Info (12022): Found design unit 1: addsub_i-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/addsub_i.vhd Line: 16
+    Info (12023): Found entity 1: addsub_i File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/addsub_i.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/and_32.vhd
+    Info (12022): Found design unit 1: and_32-behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/and_32.vhd Line: 12
+    Info (12023): Found entity 1: and_32 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/and_32.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
+    Info (12022): Found design unit 1: andg2-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/andg2.vhd Line: 31
+    Info (12023): Found entity 1: andg2 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/andg2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control.vhd
+    Info (12022): Found design unit 1: control-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control.vhd Line: 29
+    Info (12023): Found entity 1: control File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control.vhd Line: 5
+Info (12021): Found 1 design units, including 0 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control_package.vhd
+    Info (12022): Found design unit 1: control_package File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control_package.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
+    Info (12022): Found design unit 1: dffg-mixed File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/dffg.vhd Line: 35
+    Info (12023): Found entity 1: dffg File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/dffg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/invg.vhd
+    Info (12022): Found design unit 1: invg-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/invg.vhd Line: 30
+    Info (12023): Found entity 1: invg File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/invg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lb_module.vhd
+    Info (12022): Found design unit 1: lb_module-Behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lb_module.vhd Line: 14
+    Info (12023): Found entity 1: lb_module File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lb_module.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lh_module.vhd
+    Info (12022): Found design unit 1: lh_module-Behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lh_module.vhd Line: 14
+    Info (12023): Found entity 1: lh_module File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lh_module.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+    Info (12022): Found design unit 1: mem-rtl File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 27
+    Info (12023): Found entity 1: mem File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux16t1_32bit.vhd
+    Info (12022): Found design unit 1: mux16t1_32bit-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux16t1_32bit.vhd Line: 16
+    Info (12023): Found entity 1: mux16t1_32bit File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux16t1_32bit.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
+    Info (12022): Found design unit 1: mux2t1_N-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd Line: 30
+    Info (12023): Found entity 1: mux2t1_N File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd
+    Info (12022): Found design unit 1: mux2to1-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd Line: 14
+    Info (12023): Found entity 1: mux2to1 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1_5bit.vhd
+    Info (12022): Found design unit 1: mux2to1_5bit-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1_5bit.vhd Line: 13
+    Info (12023): Found entity 1: mux2to1_5bit File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1_5bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd
+    Info (12022): Found design unit 1: mux32t1-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd Line: 16
+    Info (12023): Found entity 1: mux32t1 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux4to1_32bit.vhd
+    Info (12022): Found design unit 1: mux4to1_32bit-Behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux4to1_32bit.vhd Line: 15
+    Info (12023): Found entity 1: mux4to1_32bit File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux4to1_32bit.vhd Line: 4
+Info (12021): Found 1 design units, including 0 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/my_package.vhd
+    Info (12022): Found design unit 1: my_package File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/my_package.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd
+    Info (12022): Found design unit 1: nAdder_Sub-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd Line: 16
+    Info (12023): Found entity 1: nAdder_Sub File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/or_32.vhd
+    Info (12022): Found design unit 1: or_32-behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/or_32.vhd Line: 12
+    Info (12023): Found entity 1: or_32 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/or_32.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/org2.vhd
+    Info (12022): Found design unit 1: org2-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/org2.vhd Line: 31
+    Info (12023): Found entity 1: org2 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/org2.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shifter.vhd
+    Info (12022): Found design unit 1: Shifter-structural File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shifter.vhd Line: 16
+    Info (12023): Found entity 1: Shifter File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shifter.vhd Line: 5
+Info (12021): Found 0 design units, including 0 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shmtTo32Decoder.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xor_32.vhd
+    Info (12022): Found design unit 1: xor_32-behavioral File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xor_32.vhd Line: 12
+    Info (12023): Found entity 1: xor_32 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xor_32.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd
+    Info (12022): Found design unit 1: xorg2-dataflow File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd Line: 31
+    Info (12023): Found entity 1: xorg2 File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd Line: 23
+Info (12127): Elaborating entity "MIPS_Processor" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(54): object "s_Halt" assigned a value but never read File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 54
+Warning (10036): Verilog HDL or VHDL warning at MIPS_Processor.vhd(57): object "s_Ovfl" assigned a value but never read File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 57
+Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 255
+Info (12128): Elaborating entity "lb_module" for hierarchy "lb_module:lbModule" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 274
+Info (12128): Elaborating entity "lh_module" for hierarchy "lh_module:lhModule" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 282
+Info (12128): Elaborating entity "mux4to1_32bit" for hierarchy "mux4to1_32bit:dataSelMux" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 290
+Info (12128): Elaborating entity "Fetchmodule" for hierarchy "Fetchmodule:Fetch" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 300
+Warning (10036): Verilog HDL or VHDL warning at Fetchmodule.vhd(100): object "s_overflow1" assigned a value but never read File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 100
+Warning (10036): Verilog HDL or VHDL warning at Fetchmodule.vhd(101): object "s_overflow2" assigned a value but never read File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 101
+Info (12128): Elaborating entity "mux2t1_N" for hierarchy "Fetchmodule:Fetch|mux2t1_N:g_pcMux" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 114
+Info (12128): Elaborating entity "mux2to1" for hierarchy "Fetchmodule:Fetch|mux2t1_N:g_pcMux|mux2to1:\G_NBit_MUX:0:MUXI" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd Line: 43
+Info (12128): Elaborating entity "N_Reg" for hierarchy "Fetchmodule:Fetch|N_Reg:g_pc" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 122
+Info (12128): Elaborating entity "dffg" for hierarchy "Fetchmodule:Fetch|N_Reg:g_pc|dffg:\NBit_DFF:0:dffi" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd Line: 33
+Info (12128): Elaborating entity "nAdder_Sub" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 131
+Info (12128): Elaborating entity "OnesComp" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|OnesComp:g_not" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd Line: 48
+Info (12128): Elaborating entity "invg" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|OnesComp:g_not|invg:\NBit_Comp:0:CompI" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/OnesComp.vhd Line: 24
+Info (12128): Elaborating entity "Adder_N" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|Adder_N:g_adder" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd Line: 62
+Info (12128): Elaborating entity "Adder" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|Adder_N:g_adder|Adder:\NBit_Adder:0:adderI" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd Line: 35
+Info (12128): Elaborating entity "xorg2" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|Adder_N:g_adder|Adder:\NBit_Adder:0:adderI|xorg2:G_xor1" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd Line: 50
+Info (12128): Elaborating entity "andg2" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|Adder_N:g_adder|Adder:\NBit_Adder:0:adderI|andg2:g_and1" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd Line: 67
+Info (12128): Elaborating entity "org2" for hierarchy "Fetchmodule:Fetch|nAdder_Sub:g_add4|Adder_N:g_adder|Adder:\NBit_Adder:0:adderI|org2:g_or1" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd Line: 88
+Info (12128): Elaborating entity "SLL26bTo28b" for hierarchy "Fetchmodule:Fetch|SLL26bTo28b:g_SLL26bit" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 140
+Info (12128): Elaborating entity "Append" for hierarchy "Fetchmodule:Fetch|Append:g_append" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 146
+Info (12128): Elaborating entity "SLL2_32bit" for hierarchy "Fetchmodule:Fetch|SLL2_32bit:g_sll32" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd Line: 153
+Info (12128): Elaborating entity "control" for hierarchy "control:controlModule" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 316
+Info (12128): Elaborating entity "Extender" for hierarchy "Extender:extenderModule" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 339
+Info (12128): Elaborating entity "mux2to1_5bit" for hierarchy "mux2to1_5bit:RegDesMUX" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 354
+Info (12128): Elaborating entity "MIP_REG" for hierarchy "MIP_REG:MainRegister" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 370
+Info (12128): Elaborating entity "N_decoder" for hierarchy "MIP_REG:MainRegister|N_decoder:g_decoder" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd Line: 64
+Info (12128): Elaborating entity "N_Reg" for hierarchy "MIP_REG:MainRegister|N_Reg:\g_reg:29:g_reg29:reg29" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd Line: 90
+Info (12128): Elaborating entity "dffg" for hierarchy "MIP_REG:MainRegister|N_Reg:\g_reg:29:g_reg29:reg29|dffg:\NBit_DFF:2:dffi" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd Line: 33
+Info (12128): Elaborating entity "mux32t1" for hierarchy "MIP_REG:MainRegister|mux32t1:g_mux1" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd Line: 117
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:MainALU" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd Line: 383
+Warning (10873): Using initial value X (don't care) for net "s_mux_input[13]" at ALU.vhd(119) File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 119
+Warning (10873): Using initial value X (don't care) for net "s_mux_input[9]" at ALU.vhd(119) File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 119
+Warning (10873): Using initial value X (don't care) for net "s_mux_input[6..4]" at ALU.vhd(119) File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 119
+Info (12128): Elaborating entity "and_32" for hierarchy "ALU:MainALU|and_32:g_and" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 156
+Info (12128): Elaborating entity "or_32" for hierarchy "ALU:MainALU|or_32:g_or" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 163
+Info (12128): Elaborating entity "xor_32" for hierarchy "ALU:MainALU|xor_32:g_xor" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd Line: 169
+Info (12128): Elaborating entity "Shifter" for hierarchy "ALU:MainALU|Shifter:g_shifter" File: /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cp

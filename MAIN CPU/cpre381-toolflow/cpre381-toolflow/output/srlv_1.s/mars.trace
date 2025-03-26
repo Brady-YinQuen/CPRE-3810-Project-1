@@ -1,4 +1,4 @@
-Warning in /home/choong/CPRE381/cpre381-toolflow/cpre381-toolflow/proj/testing/srlv_1.s line 3 column 1: MARS does not recognize the .global directive.  Ignored.
+Warning in /home/choong/CPRE381/CPRE-3810-Project-1/MAIN CPU/cpre381-toolflow/cpre381-toolflow/proj/testing/srlv_1.s line 3 column 1: MARS does not recognize the .global directive.  Ignored.
 
 [inst #1] addi $9,$9,16
 Register Write to Reg: 0x09 Val: 0x00000010
