@@ -12,75 +12,169 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-cd /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest
+cd {/home/choong/CPRE381/project test bench/shifter}
 # reading modelsim.ini
-vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+cd {/home/choong/CPRE381/project test bench/shifter}
+# reading modelsim.ini
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:43:36 on Mar 12,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# Start time: 16:07:18 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(5): (vcom-1615) Existing entity 'Fetchmodule' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(5) will be overwritten.
-# -- Compiling entity Fetchmodule
-# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(18): (vcom-1615) Existing architecture 'Fetchmodule(structural)' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(17) will be overwritten.
-# -- Compiling architecture structural of Fetchmodule
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): (vcom-1136) Unknown identifier "N".
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): (vcom-1591) Bad expression in left bound of range expression.
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(72): Type error in range expression.
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): (vcom-1136) Unknown identifier "N".
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): (vcom-1591) Bad expression in left bound of range expression.
-# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(73): Type error in range expression.
-# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(165): VHDL Compiler exiting
-# End time: 17:43:36 on Mar 12,2025, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 2
-vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
-# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:43:57 on Mar 12,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Fetchmodule
-# ** Warning: /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd(18): (vcom-1615) Existing architecture 'Fetchmodule(structural)' at /home/choong/CPRE381/project test bench/fetchModuleTest/Fetchmodule.vhd(17) will be overwritten.
-# -- Compiling architecture structural of Fetchmodule
-# End time: 17:43:57 on Mar 12,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
-# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:44:45 on Mar 12,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Fetchmodule
-# -- Compiling architecture structural of Fetchmodule
-# End time: 17:44:45 on Mar 12,2025, Elapsed time: 0:00:00
+# -- Compiling entity Shifter
+# -- Compiling architecture structural of Shifter
+# End time: 16:07:18 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:44:46 on Mar 12,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# Start time: 16:07:18 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Fetchmodule
-# -- Compiling architecture structural of Fetchmodule
-# End time: 17:44:46 on Mar 12,2025, Elapsed time: 0:00:00
+# -- Compiling entity tb_Shifter
+# -- Compiling architecture behavior of tb_Shifter
+# End time: 16:07:18 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd
+vsim work.tb_shifter
+# vsim work.tb_shifter 
+# Start time: 16:08:10 on Mar 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_shifter(behavior)#1
+add wave -position insertpoint sim:/tb_shifter/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_shifter/*'.
+vsim work.tb_shifter -voptargs=+acc
+# End time: 16:08:26 on Mar 26,2025, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim work.tb_shifter -voptargs="+acc" 
+# Start time: 16:08:26 on Mar 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_shifter(behavior)#1
+# Loading work.shifter(structural)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_shifter/uut
+add wave -position insertpoint sim:/tb_shifter/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+add wave -position insertpoint sim:/tb_shifter/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_shifter/uut
+run
+# Load canceled
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:44:46 on Mar 12,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/fetchModuleTest/Fetchmodule.vhd 
+# Start time: 16:12:50 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Fetchmodule
-# -- Compiling architecture structural of Fetchmodule
-# End time: 17:44:46 on Mar 12,2025, Elapsed time: 0:00:00
+# -- Compiling entity Shifter
+# -- Compiling architecture structural of Shifter
+# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): Illegal target for signal assignment.
+# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): (vcom-1136) Unknown identifier "s_shiftamount".
+# ** Note: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(35): VHDL Compiler exiting
+# End time: 16:12:50 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:12:50 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Shifter
+# -- Compiling architecture behavior of tb_Shifter
+# ** Error (suppressible): /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd(57): (vcom-1272) Length of expected is 5; length of actual is 20.
+# ** Note: /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd(65): VHDL Compiler exiting
+# End time: 16:12:51 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:13:09 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Shifter
+# -- Compiling architecture structural of Shifter
+# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): Illegal target for signal assignment.
+# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): (vcom-1136) Unknown identifier "s_shiftamount".
+# ** Note: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(35): VHDL Compiler exiting
+# End time: 16:13:09 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:13:09 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Shifter
+# -- Compiling architecture behavior of tb_Shifter
+# End time: 16:13:09 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:13:28 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Shifter
+# -- Compiling architecture structural of Shifter
+# End time: 16:13:28 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:13:28 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_Shifter
+# -- Compiling architecture behavior of tb_Shifter
+# End time: 16:13:28 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_shifter
+# End time: 16:13:40 on Mar 26,2025, Elapsed time: 0:05:14
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_shifter 
+# Start time: 16:13:40 on Mar 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_shifter(behavior)#1
+# Loading work.shifter(structural)#1
+add wave -position insertpoint sim:/tb_shifter/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut

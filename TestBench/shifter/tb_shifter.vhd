@@ -9,7 +9,7 @@ architecture behavior of tb_Shifter is
 
     component Shifter is 
     port(
-        i_shiftamount: in std_logic_vector(31 downto 0);
+        i_shiftamount: in std_logic_vector(4 downto 0);
         i_data: in std_logic_vector(31 downto 0);
         i_shiftright: in std_logic;
         i_arithmetic: in std_logic;
@@ -18,7 +18,7 @@ architecture behavior of tb_Shifter is
     end component Shifter;
 
 
-    signal s_shiftamount : std_logic_vector(31 downto 0);
+    signal s_shiftamount : std_logic_vector(4 downto 0);
     signal s_data        : std_logic_vector(31 downto 0);
     signal s_shiftright   : std_logic;
     signal s_arithmetic  : std_logic;
@@ -39,14 +39,14 @@ begin
     begin
         -- Test case 1: Shift right by FFFFFFF
         s_data <= x"10101010";
-        s_shiftamount <= x"FFFFFFFF";
+        s_shiftamount <= "11111";
         s_shiftright <= '1';
         s_arithmetic <= '0';
         wait for 10 ns;
 
         -- Test case 2: Logical shift right by 3
         s_data <= x"00000001";
-        s_shiftamount <= x"00000003";
+        s_shiftamount <= "00011";
         s_shiftright <= '1';
         s_arithmetic <= '0';
         wait for 10 ns;
@@ -54,7 +54,7 @@ begin
 
         -- Test case 3: Arithmetic shift right by 1
         s_data <= x"00000008";
-        s_shiftamount <= x"00000002";
+        s_shiftamount <= "00010";
         s_shiftright <= '1';
         s_arithmetic <= '1';
         wait for 10 ns;
