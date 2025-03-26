@@ -1,0 +1,22 @@
+[inst #1] addiu $8,$0,1234
+Register Write to Reg: 0x08 Val: 0x000004D2
+[inst #2] slti $9,$8,1234
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #3] addiu $8,$0,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #4] slti $9,$8,0
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #5] addiu $8,$0,32767
+Register Write to Reg: 0x08 Val: 0x00007FFF
+[inst #6] slti $9,$8,32767
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #7] addiu $8,$0,31402
+Register Write to Reg: 0x08 Val: 0x00007AAA
+[inst #8] slti $9,$8,31402
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #9] addiu $8,$0,31916
+Register Write to Reg: 0x08 Val: 0x00007CAC
+[inst #10] slti $9,$8,31916
+Register Write to Reg: 0x09 Val: 0x00000000
+[inst #11] halt 
+

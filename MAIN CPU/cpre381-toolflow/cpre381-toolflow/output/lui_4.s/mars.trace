@@ -1,0 +1,130 @@
+[inst #1] lui $0,4090
+Register Write to Reg: 0x00 Val: 0x0FFA0000
+[inst #2] lui $0,65261
+Register Write to Reg: 0x00 Val: 0xFEED0000
+[inst #3] lui $1,4090
+Register Write to Reg: 0x01 Val: 0x0FFA0000
+[inst #4] lui $1,65261
+Register Write to Reg: 0x01 Val: 0xFEED0000
+[inst #5] lui $2,4090
+Register Write to Reg: 0x02 Val: 0x0FFA0000
+[inst #6] lui $2,65261
+Register Write to Reg: 0x02 Val: 0xFEED0000
+[inst #7] lui $3,4090
+Register Write to Reg: 0x03 Val: 0x0FFA0000
+[inst #8] lui $3,65261
+Register Write to Reg: 0x03 Val: 0xFEED0000
+[inst #9] lui $4,4090
+Register Write to Reg: 0x04 Val: 0x0FFA0000
+[inst #10] lui $4,65261
+Register Write to Reg: 0x04 Val: 0xFEED0000
+[inst #11] lui $5,4090
+Register Write to Reg: 0x05 Val: 0x0FFA0000
+[inst #12] lui $5,65261
+Register Write to Reg: 0x05 Val: 0xFEED0000
+[inst #13] lui $6,4090
+Register Write to Reg: 0x06 Val: 0x0FFA0000
+[inst #14] lui $6,65261
+Register Write to Reg: 0x06 Val: 0xFEED0000
+[inst #15] lui $7,4090
+Register Write to Reg: 0x07 Val: 0x0FFA0000
+[inst #16] lui $7,65261
+Register Write to Reg: 0x07 Val: 0xFEED0000
+[inst #17] lui $8,4090
+Register Write to Reg: 0x08 Val: 0x0FFA0000
+[inst #18] lui $8,65261
+Register Write to Reg: 0x08 Val: 0xFEED0000
+[inst #19] lui $9,4090
+Register Write to Reg: 0x09 Val: 0x0FFA0000
+[inst #20] lui $9,65261
+Register Write to Reg: 0x09 Val: 0xFEED0000
+[inst #21] lui $10,4090
+Register Write to Reg: 0x0A Val: 0x0FFA0000
+[inst #22] lui $10,65261
+Register Write to Reg: 0x0A Val: 0xFEED0000
+[inst #23] lui $11,4090
+Register Write to Reg: 0x0B Val: 0x0FFA0000
+[inst #24] lui $11,65261
+Register Write to Reg: 0x0B Val: 0xFEED0000
+[inst #25] lui $12,4090
+Register Write to Reg: 0x0C Val: 0x0FFA0000
+[inst #26] lui $12,65261
+Register Write to Reg: 0x0C Val: 0xFEED0000
+[inst #27] lui $13,4090
+Register Write to Reg: 0x0D Val: 0x0FFA0000
+[inst #28] lui $13,65261
+Register Write to Reg: 0x0D Val: 0xFEED0000
+[inst #29] lui $14,4090
+Register Write to Reg: 0x0E Val: 0x0FFA0000
+[inst #30] lui $14,65261
+Register Write to Reg: 0x0E Val: 0xFEED0000
+[inst #31] lui $15,4090
+Register Write to Reg: 0x0F Val: 0x0FFA0000
+[inst #32] lui $15,65261
+Register Write to Reg: 0x0F Val: 0xFEED0000
+[inst #33] lui $16,4090
+Register Write to Reg: 0x10 Val: 0x0FFA0000
+[inst #34] lui $16,65261
+Register Write to Reg: 0x10 Val: 0xFEED0000
+[inst #35] lui $17,4090
+Register Write to Reg: 0x11 Val: 0x0FFA0000
+[inst #36] lui $17,65261
+Register Write to Reg: 0x11 Val: 0xFEED0000
+[inst #37] lui $18,4090
+Register Write to Reg: 0x12 Val: 0x0FFA0000
+[inst #38] lui $18,65261
+Register Write to Reg: 0x12 Val: 0xFEED0000
+[inst #39] lui $19,4090
+Register Write to Reg: 0x13 Val: 0x0FFA0000
+[inst #40] lui $19,65261
+Register Write to Reg: 0x13 Val: 0xFEED0000
+[inst #41] lui $20,4090
+Register Write to Reg: 0x14 Val: 0x0FFA0000
+[inst #42] lui $20,65261
+Register Write to Reg: 0x14 Val: 0xFEED0000
+[inst #43] lui $21,4090
+Register Write to Reg: 0x15 Val: 0x0FFA0000
+[inst #44] lui $21,65261
+Register Write to Reg: 0x15 Val: 0xFEED0000
+[inst #45] lui $22,4090
+Register Write to Reg: 0x16 Val: 0x0FFA0000
+[inst #46] lui $22,65261
+Register Write to Reg: 0x16 Val: 0xFEED0000
+[inst #47] lui $23,4090
+Register Write to Reg: 0x17 Val: 0x0FFA0000
+[inst #48] lui $23,65261
+Register Write to Reg: 0x17 Val: 0xFEED0000
+[inst #49] lui $24,4090
+Register Write to Reg: 0x18 Val: 0x0FFA0000
+[inst #50] lui $24,65261
+Register Write to Reg: 0x18 Val: 0xFEED0000
+[inst #51] lui $25,4090
+Register Write to Reg: 0x19 Val: 0x0FFA0000
+[inst #52] lui $25,65261
+Register Write to Reg: 0x19 Val: 0xFEED0000
+[inst #53] lui $26,4090
+Register Write to Reg: 0x1A Val: 0x0FFA0000
+[inst #54] lui $26,65261
+Register Write to Reg: 0x1A Val: 0xFEED0000
+[inst #55] lui $27,4090
+Register Write to Reg: 0x1B Val: 0x0FFA0000
+[inst #56] lui $27,65261
+Register Write to Reg: 0x1B Val: 0xFEED0000
+[inst #57] lui $28,4090
+Register Write to Reg: 0x1C Val: 0x0FFA0000
+[inst #58] lui $28,65261
+Register Write to Reg: 0x1C Val: 0xFEED0000
+[inst #59] lui $29,4090
+Register Write to Reg: 0x1D Val: 0x0FFA0000
+[inst #60] lui $29,65261
+Register Write to Reg: 0x1D Val: 0xFEED0000
+[inst #61] lui $30,4090
+Register Write to Reg: 0x1E Val: 0x0FFA0000
+[inst #62] lui $30,65261
+Register Write to Reg: 0x1E Val: 0xFEED0000
+[inst #63] lui $31,4090
+Register Write to Reg: 0x1F Val: 0x0FFA0000
+[inst #64] lui $31,65261
+Register Write to Reg: 0x1F Val: 0xFEED0000
+[inst #65] halt 
+

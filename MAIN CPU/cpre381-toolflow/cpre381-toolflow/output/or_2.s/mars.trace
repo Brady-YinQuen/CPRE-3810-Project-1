@@ -1,0 +1,10 @@
+[inst #1] lui $1,4660
+Register Write to Reg: 0x01 Val: 0x12340000
+[inst #2] ori $1,$1,22136
+Register Write to Reg: 0x01 Val: 0x12345678
+[inst #3] add $8,$0,$1
+Register Write to Reg: 0x08 Val: 0x12345678
+[inst #4] or $9,$8,$0
+Register Write to Reg: 0x09 Val: 0x12345678
+[inst #5] halt 
+

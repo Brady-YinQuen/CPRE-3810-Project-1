@@ -1,0 +1,8 @@
+Warning in /home/choong/CPRE381/cpre381-toolflow/cpre381-toolflow/proj/testing/lb_5.s line 2 column 19: "0x80" is out-of-range for a signed value and possibly truncated
+
+[inst #1] lui $8,4097
+Register Write to Reg: 0x08 Val: 0x10010000
+[inst #2] lb $9,0($8)
+Register Write to Reg: 0x09 Val: 0xFFFFFF80
+[inst #3] halt 
+

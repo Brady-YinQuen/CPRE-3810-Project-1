@@ -1,0 +1,22 @@
+[inst #1] lui $8,4097
+Register Write to Reg: 0x08 Val: 0x10010000
+[inst #2] lh $9,0($8)
+Register Write to Reg: 0x09 Val: 0x00000001
+[inst #3] lh $10,2($8)
+Register Write to Reg: 0x0A Val: 0x00000002
+[inst #4] lh $11,4($8)
+Register Write to Reg: 0x0B Val: 0x00000003
+[inst #5] lh $12,6($8)
+Register Write to Reg: 0x0C Val: 0x00000004
+[inst #6] lh $13,8($8)
+Register Write to Reg: 0x0D Val: 0x00000005
+[inst #7] lh $14,10($8)
+Register Write to Reg: 0x0E Val: 0x00000006
+[inst #8] lh $15,12($8)
+Register Write to Reg: 0x0F Val: 0x00000007
+[inst #9] lh $24,14($8)
+Register Write to Reg: 0x18 Val: 0x00000008
+[inst #10] lh $25,16($8)
+Register Write to Reg: 0x19 Val: 0x00000009
+[inst #11] halt 
+

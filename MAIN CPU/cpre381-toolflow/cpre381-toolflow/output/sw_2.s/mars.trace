@@ -1,0 +1,14 @@
+[inst #1] addi $9,$9,100
+Register Write to Reg: 0x09 Val: 0x00000064
+[inst #2] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #3] sw $9,0($1)
+Memory Write to Addr: 0x10010000 Val: 0x00000064
+[inst #4] addi $9,$9,200
+Register Write to Reg: 0x09 Val: 0x0000012C
+[inst #5] lui $1,4097
+Register Write to Reg: 0x01 Val: 0x10010000
+[inst #6] sw $9,0($1)
+Memory Write to Addr: 0x10010000 Val: 0x0000012C
+[inst #7] halt 
+
