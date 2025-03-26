@@ -12,7 +12,9 @@ entity Fetchmodule is
         i_zero      : in std_logic; 
         i_jump      : in std_logic; 
         i_RegJump   : in std_logic; 
+        i_BNE       : in std_logic; 
         i_rs        : in std_logic_vector(31 downto 0);
+        o_pcNew     : out std_logic_vector(31 downto 0);
         o_pc        : out std_logic_vector(31 downto 0)
     );
     end Fetchmodule;
@@ -75,8 +77,16 @@ entity Fetchmodule is
                 o_Q          : out std_logic_vector(31 downto 0)
             );
             end component;
+
+
+        component invg is 
+            port (
+                i_A          : in std_logic;
+                o_F          : out std_logic
+            );
+            end component;
             
-            signal s_pc_in : std_logic_vector(31 downto 0) := x"00400000";
+            signal s_pc_in : std_logic_vector(31 downto 0);
             signal s_pc_out : std_logic_vector(31 downto 0) := x"00400000";
             signal s_adder4 : std_logic_vector(31 downto 0);
             signal s_sll26  : std_logic_vector(27 downto 0);
@@ -85,21 +95,36 @@ entity Fetchmodule is
             signal s_adderbranch : std_logic_vector(31 downto 0);
             signal s_branchmux :  std_logic_vector(31 downto 0);
             signal s_and : std_logic;
+            signal s_andbne : std_logic;
             signal s_jumpmux: std_logic_vector(31 downto 0);
             signal s_overflow1 : std_logic;
             signal s_overflow2 : std_logic;
+            signal s_newpc: std_logic_vector(31 downto 0);
+            signal s_inv : std_logic;
+            signal s_branchmuxbne :std_logic_vector(31 downto 0);
+            signal s_branchMaster :std_logic_vector(31 downto 0); 
+          
 
         
 
 
 
             begin
+
+            g_pcMux : mux2t1_N
+            port MAP(
+                i_S => i_RST,
+                i_D0 => s_newpc,
+                i_D1 => x"00400000",  -- initial PC value 
+                o_O => s_pc_in
+            );
+             
             g_pc : N_Reg
             port MAP(
                 i_CLK        =>  i_CLK, 
-                i_RST        =>  i_RST,
+                i_RST        =>  '0',
                 i_WE         =>  '1',
-                i_D          => o_pc,
+                i_D          => s_pc_in,
                 o_Q          => s_pc_out
             );
 
@@ -154,11 +179,40 @@ entity Fetchmodule is
                 i_D1 => s_adderbranch,
                 o_O => s_branchmux
             );
+            
+            g_inv : invg
+            port MAP(
+                i_A  =>  i_zero,
+                o_F  =>  s_inv
+            );
+
+            g_andBNE : andg2 
+            port MAP(
+                i_A => i_branch,
+                i_B => s_inv,
+                o_F => s_andbne  
+            );
+
+            g_MuxBNE : mux2t1_N
+            port MAP(
+                i_S => s_andbne,
+                i_D0 => s_adder4,
+                i_D1 => s_adderbranch,
+                o_O => s_branchmuxbne
+            );
+
+            g_MuxBranchMaster : mux2t1_N
+            port MAP(
+                i_S => i_BNE,
+                i_D0 => s_branchmux,
+                i_D1 => s_branchmuxbne,
+                o_O => s_branchMaster
+            );
 
             g_muxjump : mux2t1_N
             port MAP(
                 i_S => i_jump,
-                i_D0 => s_branchmux,
+                i_D0 => s_branchMaster,
                 i_D1 => s_append,
                 o_O => s_jumpmux
             );
@@ -168,10 +222,11 @@ entity Fetchmodule is
                 i_S => i_RegJump,
                 i_D0 => s_jumpmux,
                 i_D1 => i_rs,
-                o_O => o_pc
+                o_O => s_newpc
             );
 
-
+                o_pc <= s_pc_out;
+                o_pcNew  <= s_adder4;
 
             end architecture structural;
 
