@@ -12,159 +12,1307 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-cd {/home/choong/CPRE381/project test bench/shifter}
-# reading modelsim.ini
-cd {/home/choong/CPRE381/project test bench/shifter}
-# reading modelsim.ini
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
+cd {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench}
+vlib work
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:07:18 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity shmtTo32Decoder
+# -- Compiling architecture dataflow of shmtTo32Decoder
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd(15): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd(51): VHDL Compiler exiting
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture structure of Adder
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder_N
+# -- Compiling architecture structural of Adder_N
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addsub_i
+# -- Compiling architecture structural of addsub_i
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.control_package.
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd(4): (vcom-1195) Cannot find expanded name "work.control_package".
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd(4): Unknown expanded name.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd(6): VHDL Compiler exiting
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_32
+# -- Compiling architecture behavioral of and_32
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lb_module.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lb_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lb_module
+# -- Compiling architecture Behavioral of lb_module
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 18:42:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Extender
+# -- Compiling architecture dataflow of Extender
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity control
+# -- Compiling architecture dataflow of control
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package control_package
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Append
+# -- Compiling architecture dataflow of Append
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lh_module.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lh_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lh_module
+# -- Compiling architecture Behavioral of lh_module
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.my_package.
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd(4): (vcom-1195) Cannot find expanded name "work.my_package".
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd(4): Unknown expanded name.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd(6): VHDL Compiler exiting
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture dataflow of mux2to1
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1_5bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1_5bit
+# -- Compiling architecture structural of mux2to1_5bit
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux4to1_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux4to1_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1_32bit
+# -- Compiling architecture Behavioral of mux4to1_32bit
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux16t1_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux16t1_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity mux16t1_32bit
+# -- Compiling architecture dataflow of mux16t1_32bit
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ZeroFlag.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ZeroFlag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ZeroFlag
+# -- Compiling architecture Dataflow of ZeroFlag
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xor_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xor_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xor_32
+# -- Compiling architecture behavioral of xor_32
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL26bTo28b.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL26bTo28b.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLL26bTo28b
+# -- Compiling architecture dataflow of SLL26bTo28b
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL2_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL2_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLL2_32bit
+# -- Compiling architecture dataflow of SLL2_32bit
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shifter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Shifter
 # -- Compiling architecture structural of Shifter
-# End time: 16:07:18 on Mar 26,2025, Elapsed time: 0:00:00
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/org2.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:07:18 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Shifter
-# -- Compiling architecture behavior of tb_Shifter
-# End time: 16:07:18 on Mar 26,2025, Elapsed time: 0:00:00
+# ** Error: (vcom-11) Could not find work.my_package.
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd(4): (vcom-1195) Cannot find expanded name "work.my_package".
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd(4): Unknown expanded name.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd(7): VHDL Compiler exiting
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/my_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/my_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_package
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.tb_shifter
-# vsim work.tb_shifter 
-# Start time: 16:08:10 on Mar 26,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MySecondMIPSDatapath.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MySecondMIPSDatapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity MySecondMIPSDatapath
+# -- Compiling architecture structural of MySecondMIPSDatapath
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity N_decoder
+# -- Compiling architecture dataflow of N_decoder
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(15): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(51): VHDL Compiler exiting
+# End time: 18:42:56 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:56 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_Reg
+# -- Compiling architecture structural of N_Reg
+# End time: 18:42:57 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:57 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nAdder_Sub
+# -- Compiling architecture structural of nAdder_Sub
+# End time: 18:42:57 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:57 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OnesComp
+# -- Compiling architecture structural of OnesComp
+# End time: 18:42:57 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:42:57 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity or_32
+# -- Compiling architecture behavioral of or_32
+# End time: 18:42:57 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:43:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity shmtTo32Decoder
+# -- Compiling architecture dataflow of shmtTo32Decoder
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd(15): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/5BitTo32Decoder.vhd(51): VHDL Compiler exiting
+# End time: 18:43:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:01 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture structure of Adder
+# End time: 18:44:02 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture structure of Adder
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder_N
+# -- Compiling architecture structural of Adder_N
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addsub_i
+# -- Compiling architecture structural of addsub_i
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# ** Error: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd(186): (vcom-1436) Actual expression (infix expression) of formal "i_D0" is not globally static.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd(215): VHDL Compiler exiting
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_32
+# -- Compiling architecture behavioral of and_32
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:06 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 18:44:06 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:17 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/and_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_32
+# -- Compiling architecture behavioral of and_32
+# End time: 18:44:17 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:17 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 18:44:17 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:17 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/addsub_i.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addsub_i
+# -- Compiling architecture structural of addsub_i
+# End time: 18:44:17 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:17 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder_N
+# -- Compiling architecture structural of Adder_N
+# End time: 18:44:17 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:17 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture structure of Adder
+# End time: 18:44:17 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package control_package
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Append
+# -- Compiling architecture dataflow of Append
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity control
+# -- Compiling architecture dataflow of control
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package control_package
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:33 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 18:44:33 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package control_package
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Append.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Append
+# -- Compiling architecture dataflow of Append
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity control
+# -- Compiling architecture dataflow of control
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/control_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package control_package
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Fetchmodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fetchmodule
+# -- Compiling architecture structural of Fetchmodule
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/Extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Extender
+# -- Compiling architecture dataflow of Extender
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lb_module.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:35 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lb_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lb_module
+# -- Compiling architecture Behavioral of lb_module
+# End time: 18:44:35 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lh_module.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/lh_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity lh_module
+# -- Compiling architecture Behavioral of lh_module
+# End time: 18:44:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 18:44:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MIP_REG.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity MIP_REG
+# -- Compiling architecture structural of MIP_REG
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture dataflow of mux2to1
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1_5bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux2to1_5bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1_5bit
+# -- Compiling architecture structural of mux2to1_5bit
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux4to1_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux4to1_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1_32bit
+# -- Compiling architecture Behavioral of mux4to1_32bit
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux16t1_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:42 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux16t1_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity mux16t1_32bit
+# -- Compiling architecture dataflow of mux16t1_32bit
+# End time: 18:44:42 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity mux32t1
+# -- Compiling architecture dataflow of mux32t1
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/my_package.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/my_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package my_package
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MySecondMIPSDatapath.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/MySecondMIPSDatapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_package
+# -- Compiling entity MySecondMIPSDatapath
+# -- Compiling architecture structural of MySecondMIPSDatapath
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity N_decoder
+# -- Compiling architecture dataflow of N_decoder
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(15): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(51): VHDL Compiler exiting
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_Reg
+# -- Compiling architecture structural of N_Reg
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nAdder_Sub
+# -- Compiling architecture structural of nAdder_Sub
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OnesComp
+# -- Compiling architecture structural of OnesComp
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:44:49 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity or_32
+# -- Compiling architecture behavioral of or_32
+# End time: 18:44:49 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:45:02 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity N_decoder
+# -- Compiling architecture dataflow of N_decoder
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(15): (vcom-1014) Array type selected signal assignment expression must be of a locally static subtype.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd(51): VHDL Compiler exiting
+# End time: 18:45:02 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Modified modelsim.ini
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:31 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity N_decoder
+# -- Compiling architecture dataflow of N_decoder
+# End time: 18:46:31 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:34 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/N_Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_Reg
+# -- Compiling architecture structural of N_Reg
+# End time: 18:46:34 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:34 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/nAdder_Sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nAdder_Sub
+# -- Compiling architecture structural of nAdder_Sub
+# End time: 18:46:34 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:34 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/OnesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OnesComp
+# -- Compiling architecture structural of OnesComp
+# End time: 18:46:34 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:34 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/or_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity or_32
+# -- Compiling architecture behavioral of or_32
+# End time: 18:46:34 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Shifter
+# -- Compiling architecture structural of Shifter
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/org2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/shmtTo32Decoder.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL2_32bit.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL2_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLL2_32bit
+# -- Compiling architecture dataflow of SLL2_32bit
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL26bTo28b.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/SLL26bTo28b.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SLL26bTo28b
+# -- Compiling architecture dataflow of SLL26bTo28b
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xor_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xor_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xor_32
+# -- Compiling architecture behavioral of xor_32
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ZeroFlag.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:41 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ZeroFlag.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ZeroFlag
+# -- Compiling architecture Dataflow of ZeroFlag
+# End time: 18:46:41 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:46 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 18:46:46 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:46:46 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 18:46:46 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.alu_tb -voptargs=+acc
+# vsim work.alu_tb -voptargs="+acc" 
+# Start time: 18:46:58 on Mar 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_shifter(behavior)#1
-add wave -position insertpoint sim:/tb_shifter/*
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/tb_shifter/*'.
-vsim work.tb_shifter -voptargs=+acc
-# End time: 16:08:26 on Mar 26,2025, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 0
-# vsim work.tb_shifter -voptargs="+acc" 
-# Start time: 16:08:26 on Mar 26,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_shifter(behavior)#1
+# Loading work.alu_tb(sim)#1
+# Loading work.control_package
+# Loading work.alu(structural)#1
+# Loading work.nadder_sub(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.and_32(behavioral)#1
+# Loading work.or_32(behavioral)#1
+# Loading work.xor_32(behavioral)#1
 # Loading work.shifter(structural)#1
+# Loading work.mux16t1_32bit(dataflow)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.zeroflag(dataflow)#1
+add wave -position insertpoint sim:/alu_tb/*
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_bigmux
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 1  Instance: /tb_shifter/uut
-add wave -position insertpoint sim:/tb_shifter/*
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_shifter
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /alu_tb/uut/g_shifter
+# ** Note: Output: 1
+#    Time: 10 ns  Iteration: 0  Instance: /alu_tb
+run
+add wave -position insertpoint sim:/alu_tb/uut/g_bigmux/*
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-add wave -position insertpoint sim:/tb_shifter/*
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_bigmux
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 1  Instance: /tb_shifter/uut
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_shifter
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /alu_tb/uut/g_shifter
+# ** Note: Output: 1
+#    Time: 10 ns  Iteration: 0  Instance: /alu_tb
 run
-# Load canceled
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:12:50 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
+# Start time: 18:56:54 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Shifter
-# -- Compiling architecture structural of Shifter
-# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): Illegal target for signal assignment.
-# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): (vcom-1136) Unknown identifier "s_shiftamount".
-# ** Note: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(35): VHDL Compiler exiting
-# End time: 16:12:50 on Mar 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
-# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:12:50 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Shifter
-# -- Compiling architecture behavior of tb_Shifter
-# ** Error (suppressible): /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd(57): (vcom-1272) Length of expected is 5; length of actual is 20.
-# ** Note: /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd(65): VHDL Compiler exiting
-# End time: 16:12:51 on Mar 26,2025, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
-# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:13:09 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Shifter
-# -- Compiling architecture structural of Shifter
-# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): Illegal target for signal assignment.
-# ** Error: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(19): (vcom-1136) Unknown identifier "s_shiftamount".
-# ** Note: /home/choong/CPRE381/project test bench/shifter/shifter.vhd(35): VHDL Compiler exiting
-# End time: 16:13:09 on Mar 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
-# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:13:09 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Shifter
-# -- Compiling architecture behavior of tb_Shifter
-# End time: 16:13:09 on Mar 26,2025, Elapsed time: 0:00:00
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 18:56:54 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/shifter.vhd}
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:13:28 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/shifter.vhd 
+# Start time: 18:56:54 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity Shifter
-# -- Compiling architecture structural of Shifter
-# End time: 16:13:28 on Mar 26,2025, Elapsed time: 0:00:00
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 18:56:54 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work {/home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd}
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
 # QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 16:13:28 on Mar 26,2025
-# vcom -reportprogress 300 -work work /home/choong/CPRE381/project test bench/shifter/tb_shifter.vhd 
+# Start time: 18:56:54 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_Shifter
-# -- Compiling architecture behavior of tb_Shifter
-# End time: 16:13:28 on Mar 26,2025, Elapsed time: 0:00:00
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 18:56:55 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.tb_shifter
-# End time: 16:13:40 on Mar 26,2025, Elapsed time: 0:05:14
-# Errors: 0, Warnings: 2
-# vsim -voptargs="+acc" work.tb_shifter 
-# Start time: 16:13:40 on Mar 26,2025
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:56:55 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 18:56:55 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu_tb
+# End time: 18:57:47 on Mar 26,2025, Elapsed time: 0:10:49
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.alu_tb 
+# Start time: 18:57:47 on Mar 26,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -172,9 +1320,278 @@ vsim -voptargs=+acc work.tb_shifter
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_shifter(behavior)#1
+# Loading work.alu_tb(sim)#1
+# Loading work.control_package
+# Loading work.alu(structural)#1
+# Loading work.nadder_sub(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.and_32(behavioral)#1
+# Loading work.or_32(behavioral)#1
+# Loading work.xor_32(behavioral)#1
 # Loading work.shifter(structural)#1
-add wave -position insertpoint sim:/tb_shifter/*
+# Loading work.mux16t1_32bit(dataflow)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.zeroflag(dataflow)#1
+add wave -position insertpoint sim:/alu_tb/*
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_shifter/uut
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_bigmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_shifter
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /alu_tb/uut/g_shifter
+# ** Note: Output: 0
+#    Time: 40 ns  Iteration: 0  Instance: /alu_tb
+# Causality operation skipped due to absence of debug database file
+# Load canceled
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:53 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 19:01:53 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:53 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(105): (vcom-1272) Length of expected is 5; length of actual is 4.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(123): VHDL Compiler exiting
+# End time: 19:01:53 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:53 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(105): (vcom-1272) Length of expected is 5; length of actual is 4.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(123): VHDL Compiler exiting
+# End time: 19:01:53 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:53 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 19:01:53 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:53 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 19:01:54 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:01:54 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(105): (vcom-1272) Length of expected is 5; length of actual is 4.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(123): VHDL Compiler exiting
+# End time: 19:01:54 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:02:05 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 19:02:05 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:02:05 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# ** Error (suppressible): /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(105): (vcom-1272) Length of expected is 5; length of actual is 4.
+# ** Note: /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd(123): VHDL Compiler exiting
+# End time: 19:02:05 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:02:08 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_package
+# -- Compiling entity ALU
+# -- Compiling architecture structural of ALU
+# End time: 19:02:09 on Mar 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:02:09 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 19:02:09 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu_tb
+# End time: 19:02:19 on Mar 26,2025, Elapsed time: 0:04:32
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.alu_tb 
+# Start time: 19:02:19 on Mar 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu_tb(sim)#1
+# Loading work.control_package
+# Loading work.alu(structural)#1
+# Loading work.nadder_sub(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.and_32(behavioral)#1
+# Loading work.or_32(behavioral)#1
+# Loading work.xor_32(behavioral)#1
+# Loading work.shifter(structural)#1
+# Loading work.mux16t1_32bit(dataflow)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.zeroflag(dataflow)#1
+add wave -position insertpoint sim:/alu_tb/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_bigmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_shifter
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /alu_tb/uut/g_shifter
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 0  Instance: /alu_tb
+# ** Note: Output: -2147483648
+#    Time: 70 ns  Iteration: 0  Instance: /alu_tb
+run
+vcom -reportprogress 300 -work work {/home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:03:43 on Mar 26,2025
+# vcom -reportprogress 300 -work work /home/choong/CPRE381/CPRE-3810-Project-1/TestBench/ALU test bench/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_tb
+# -- Compiling architecture sim of ALU_tb
+# End time: 19:03:43 on Mar 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu_tb
+# End time: 19:03:52 on Mar 26,2025, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 6
+# vsim -voptargs="+acc" work.alu_tb 
+# Start time: 19:03:52 on Mar 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu_tb(sim)#1
+# Loading work.control_package
+# Loading work.alu(structural)#1
+# Loading work.nadder_sub(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(dataflow)#1
+# Loading work.adder_n(structural)#1
+# Loading work.adder(structure)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.and_32(behavioral)#1
+# Loading work.or_32(behavioral)#1
+# Loading work.xor_32(behavioral)#1
+# Loading work.shifter(structural)#1
+# Loading work.mux16t1_32bit(dataflow)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.zeroflag(dataflow)#1
+add wave -position insertpoint sim:/alu_tb/*
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_bigmux
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut/g_shifter
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /alu_tb/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /alu_tb/uut/g_shifter
+# ** Warning: (vsim-151) NUMERIC_STD.TO_INTEGER: Value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 70 ns  Iteration: 0  Instance: /alu_tb
+# ** Note: Output: -2147483648
+#    Time: 70 ns  Iteration: 0  Instance: /alu_tb
