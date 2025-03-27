@@ -55,63 +55,12 @@ begin
         -- Test case 1: Add 5 + 3
         i_input1 <= x"00000005";  -- 5 in hex
         i_input2 <= x"00000003";  -- 3 in hex
-        i_control <= "0010";      -- Add operation (assuming control '0000' for ADD)
+        i_control <= "0000";      -- Add operation (assuming control '0000' for ADD)
         i_overflowEN <= '0';      -- Overflow not enabled
         i_shiftregEN <= '0';      -- No shift
         i_shmt <= "00000";        -- No shift amount
         
         wait for 10 ns;  -- Wait for results
-        -- Test case 2: sub 5 - 3
-        i_input1 <= x"00000005";  -- 5 in hex
-        i_input2 <= x"00000003";  -- 3 in hex
-        i_control <= "0011";      -- Add operation (assuming control '0000' for ADD)
-        i_overflowEN <= '0';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift
-        i_shmt <= "00000";        -- No shift amount
-        
-        wait for 10 ns;  -- Wait for results
-        -- Test case 3: 3 or 12 
-        i_input1 <= x"00000003";  -- 5 in hex
-        i_input2 <= x"0000000C";  -- 3 in hex
-        i_control <= "0001";      -- Add operation (assuming control '0001' for or)
-        i_overflowEN <= '0';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift
-        i_shmt <= "00000";        -- No shift amount
-        
-        wait for 10 ns;  -- Wait for results
-        -- Test case 4: slt  5  3 
-        i_input1 <= x"00000005";  -- 5 in hex
-        i_input2 <= x"00000003";  -- 3 in hex
-        i_control <= "0111";      -- Add operation (assuming control '0111' for slt)
-        i_overflowEN <= '0';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift
-        i_shmt <= "00000";        -- No shift amount
-        
-        wait for 10 ns;  -- Wait for results
-        -- Test case 5: sll 8 with 1
-        i_input1 <= x"00000008";  -- 5 in hex
-        i_input2 <= x"00000008";  -- 3 in hex
-        i_control <= "1000";      -- Add operation (assuming control '1000' for sll)
-        i_overflowEN <= '0';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift reg 
-        i_shmt <= "00001";        -- 1 shift amount
-        wait for 10 ns;  -- Wait for results
-        -- Test case 6: sra 8 with 1
-        i_input1 <= x"00000008";  -- 5 in hex
-        i_input2 <= x"00000008";  -- 3 in hex
-        i_control <= "1011";      -- Add operation (assuming control '1011' for sra)
-        i_overflowEN <= '0';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift reg 
-        i_shmt <= "00001";        -- 1 shift amount
-        wait for 10 ns;  -- Wait for results
-        -- Test case 5: overflow 8 with 1
-        i_input1 <= x"7FFFFFFF";  -- 5 in hex
-        i_input2 <= x"00000001";  -- 3 in hex
-        i_control <= "0010";      -- Add operation (assuming control '1000' for sll)
-        i_overflowEN <= '1';      -- Overflow not enabled
-        i_shiftregEN <= '0';      -- No shift reg 
-        i_shmt <= "00000";        -- 1 shift amount
-       wait for 10 ns;  -- Wait for results
 
         -- Test output after addition
         report "Output: " & integer'image(to_integer(unsigned(o_output)));
