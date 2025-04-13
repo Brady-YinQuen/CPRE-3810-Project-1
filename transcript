@@ -1595,3 +1595,5 @@ run
 #    Time: 70 ns  Iteration: 0  Instance: /alu_tb
 # ** Note: Output: -2147483648
 #    Time: 70 ns  Iteration: 0  Instance: /alu_tb
+# End time: 19:26:52 on Mar 26,2025, Elapsed time: 0:23:00
+# Errors: 0, Warnings: 6
