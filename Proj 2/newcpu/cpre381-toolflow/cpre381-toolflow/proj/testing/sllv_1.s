@@ -10,14 +10,36 @@ result:     .word 0, 0, 0, 0, 0
 main:
     # Start Test
     la $t0, test_array
+nop
+nop
+nop
+nop
     la $t1, result
-
+nop
+nop
+nop
+nop
     lw $s0, 0($t0)      # s0 = 0xFFFFFFFF
+nop
+nop
+nop
+nop
     li $s1, 2            # s1 = 2 (shift amount)
     
+nop
+nop
+nop
+nop
     sllv $s2, $s0, $s1   # s2 = s0 << s1
-
+nop
+nop
+nop
+nop
     sw $s2, 0($t1)       # Store result
+nop
+nop
+nop
+nop
 
     # End Test
 

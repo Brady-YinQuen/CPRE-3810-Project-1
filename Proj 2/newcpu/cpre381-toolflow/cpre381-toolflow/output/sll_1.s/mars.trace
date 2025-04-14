@@ -1,0 +1,20 @@
+[inst #1] lui $8,0
+Register Write to Reg: 0x08 Val: 0x00000000
+[inst #2] nop 
+[inst #3] nop 
+[inst #4] nop 
+[inst #5] nop 
+[inst #6] ori $8,$8,1
+Register Write to Reg: 0x08 Val: 0x00000001
+[inst #7] nop 
+[inst #8] nop 
+[inst #9] nop 
+[inst #10] nop 
+[inst #11] sll $8,$8,1
+Register Write to Reg: 0x08 Val: 0x00000002
+[inst #12] nop 
+[inst #13] nop 
+[inst #14] nop 
+[inst #15] nop 
+[inst #16] halt 
+

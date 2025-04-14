@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 
 entity Shifter is
     port(
-        i_shiftamount: in std_logic_vector(31 downto 0);
+        i_shiftamount: in std_logic_vector(4 downto 0);
         i_data: in std_logic_vector(31 downto 0);
         i_shiftright: in std_logic; 
         i_arithmetic: in std_logic;
@@ -14,9 +14,9 @@ entity Shifter is
 
 
 architecture structural of Shifter is
-    signal s_shiftamount : std_logic_vector(4 downto 0);
+   
     begin
-        s_shiftamount <= i_shiftamount (4 downto 0);
+     
         process (i_shiftamount, i_data, i_shiftright, i_arithmetic )
         begin 
         if i_shiftright = '0' then 

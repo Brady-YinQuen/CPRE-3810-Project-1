@@ -90,6 +90,9 @@ architecture structure of MIPS_Processor is
   signal s_zeroFlagBranch : std_logic ;
   signal s_regENJAL :std_logic ;
   signal s_MuxWECheck :std_logic ;
+  signal s_writeEN:std_logic ;
+  signal s_writeDMemEN:std_logic ;
+
 
   -- signal Main Reg
   signal s_rdMUX : std_logic_vector(4 downto 0);
@@ -353,8 +356,10 @@ begin
     port map(clk  => iCLK,
              addr => s_DMemAddr(11 downto 2),
              data => s_DMemData,
-             we   => s_EXControl(10),
+             we   =>  s_DMemWr,
              q    => s_DMemOut);
+
+             s_DMemWr <= s_EXControl(11);
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
   -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
@@ -414,8 +419,8 @@ port map(
     o_ALUSrc => s_ALUSrc,
     o_ALUControl=> s_ALUControl,
     o_MemtoReg =>  s_memtoReg, 
-    o_DMemWr => s_DMemWr,
-    o_RegWr => s_RegWr,
+    o_DMemWr => s_writeDMemEN,
+    o_RegWr => s_writeEN,
     o_RegDst => s_RegDst,
     o_RegJump   => s_RegJump,
     o_Jump      => s_jump,
@@ -472,7 +477,7 @@ port map(
   i_S      => s_JumpLink,      
   i_D0     => s_MuxWECheck, 
   i_D1     => '1',  
-  o_O      => s_regENJAL
+  o_O      => s_RegWr
   );  
 
 extenderModule : Extender
@@ -506,7 +511,7 @@ port map(
   i_d  =>   s_RegWrData,
   i_reset => iRST,
   i_clock => iCLK,
-  i_we    => s_regENJAL,
+  i_we    => s_RegWr,
   o_D1    => s_rs,
   o_D2    => s_rt
 );
@@ -556,10 +561,10 @@ port map (
                       s_memtoReg  &                 -- 16         15
                       s_load      &                 -- [17-18]    13-14
                       s_memOutSign &                 -- 19        12
-                      s_DMemWr    &                   --20        11
+                      s_writeDMemEN    &                   --20        11
                       s_JumpLink &                    -- 21       10
                       s_pcSrc    &                    -- 22       9 
-                      s_RegWr   &                     -- 23       8
+                      s_writeEN  &                     -- 23       8
                       s_RegDst  &                     -- 7
                       (6 downto 0 => '0'),         -- 9 bits padding to reach 32 bits
   o_Q          => s_IDControl 

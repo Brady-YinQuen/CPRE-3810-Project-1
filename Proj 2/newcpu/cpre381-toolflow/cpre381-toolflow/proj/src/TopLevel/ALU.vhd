@@ -28,17 +28,9 @@ entity ALU is
             );
             end component;
         
-        component shmtTo32Decoder is 
-            port(
-                i_sel : in std_logic_vector(4 downto 0);
-                o_O   : out std_logic_vector(31 downto 0)
-            );
-            end component; 
-
-        
         component Shifter is 
             port(
-                i_shiftamount: in std_logic_vector(31 downto 0);
+                i_shiftamount: in std_logic_vector(4 downto 0);
                 i_data: in std_logic_vector(31 downto 0);
                 i_shiftright: in std_logic;
                 i_arithmetic: in std_logic;
@@ -187,23 +179,18 @@ entity ALU is
             o_F => s_nor
         );
 
-        g_decoder : shmtTo32Decoder
-        port MAP(
-            i_sel => i_shmt,
-            o_O   => s_decoder
-        );
 
         g_MuxShifter : mux2t1_N
         port MAP(
             i_S =>  i_shiftregEN,
-            i_D0 => s_decoder,
+            i_D0 => x"000000" & "000" & i_shmt,
             i_D1 => i_input1,
             o_O => s_shiftamount 
         );
 
         g_shifter : Shifter
         port map(
-            i_shiftamount   => s_shiftamount,
+            i_shiftamount   => s_shiftamount(4 downto 0),
             i_data          => i_input2,
             i_shiftright     => i_control(1),
             i_arithmetic    => i_control(0),
