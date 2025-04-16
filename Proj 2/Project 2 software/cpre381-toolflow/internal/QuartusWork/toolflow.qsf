@@ -1,0 +1,61 @@
+
+#
+# CprE 381 Generated Quartus Settings File
+#
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:08  JANUARY 28, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/5BitTo32Decoder.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ALU.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_4.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Adder_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Append.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Extender.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/Fetchmodule.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIP_REG.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MySecondMIPSDatapath.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_Reg.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/N_decoder.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/OnesComp.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/PC_Module.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/P_Reg.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL26bTo28b.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/SLL2_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/ZeroFlag.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/addsub_i.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/and_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/control_package.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/invg.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lb_module.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/lh_module.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux16t1_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux2to1_5bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mux4to1_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/my_package.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/nAdder_Sub.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/neg_dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/or_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shifter.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/shmtTo32Decoder.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xor_32.vhd"
+set_global_assignment -name VHDL_FILE "/home/choong/CPRE381/project 2 testbench/newcpu/cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd"

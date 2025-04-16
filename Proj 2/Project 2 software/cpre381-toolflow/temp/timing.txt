@@ -1,0 +1,71 @@
+
+#
+# CprE 381 toolflow Timing dump
+#
+
+FMax: 51.32mhz Clk Constraint: 20.00ns Slack: 0.52ns
+
+The path is given below
+
+ ===================================================================
+ From Node    : mem:IMem|altsyncram:ram_rtl_0|altsyncram_g8d1:auto_generated|ram_block1a0~portb_address_reg0
+ To Node      : PC_Module:PC|N_Reg:g_pc|neg_dffg:\NBit_DFF:1:dffi|s_Q
+ Launch Clock : iCLK (INVERTED)
+ Latch Clock  : iCLK (INVERTED)
+ Data Arrival Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     10.000     10.000           launch edge time
+     13.458      3.458  F        clock network delay
+     13.721      0.263     uTco  mem:IMem|altsyncram:ram_rtl_0|altsyncram_g8d1:auto_generated|ram_block1a0~portb_address_reg0
+     16.611      2.890 FR  CELL  IMem|ram_rtl_0|auto_generated|ram_block1a0|portbdataout[4]
+     17.250      0.639 RR    IC  IMem|ram~54|datad
+     17.405      0.155 RR  CELL  IMem|ram~54|combout
+     18.778      1.373 RR    IC  MainRegister|g_mux1|Mux20~0|dataa
+     19.215      0.437 RF  CELL  MainRegister|g_mux1|Mux20~0|combout
+     19.945      0.730 FF    IC  MainRegister|g_mux1|Mux20~1|datad
+     20.095      0.150 FR  CELL  MainRegister|g_mux1|Mux20~1|combout
+     21.123      1.028 RR    IC  MainRegister|g_mux1|Mux20~2|datad
+     21.278      0.155 RR  CELL  MainRegister|g_mux1|Mux20~2|combout
+     21.515      0.237 RR    IC  MainRegister|g_mux1|Mux20~3|dataa
+     21.912      0.397 RR  CELL  MainRegister|g_mux1|Mux20~3|combout
+     22.947      1.035 RR    IC  MainRegister|g_mux1|Mux20~19|datab
+     23.349      0.402 RR  CELL  MainRegister|g_mux1|Mux20~19|combout
+     23.607      0.258 RR    IC  g_zeroflag|Equal0~6|datab
+     24.039      0.432 RF  CELL  g_zeroflag|Equal0~6|combout
+     25.019      0.980 FF    IC  g_zeroflag|Equal0~9|dataa
+     25.372      0.353 FF  CELL  g_zeroflag|Equal0~9|combout
+     25.651      0.279 FF    IC  g_zeroflag|Equal0~20|dataa
+     26.004      0.353 FF  CELL  g_zeroflag|Equal0~20|combout
+     26.254      0.250 FF    IC  Fetch|g_RegJump|\G_NBit_MUX:4:MUXI|o_O~2|datac
+     26.535      0.281 FF  CELL  Fetch|g_RegJump|\G_NBit_MUX:4:MUXI|o_O~2|combout
+     27.496      0.961 FF    IC  Fetch|g_RegJump|\G_NBit_MUX:12:MUXI|o_O~0|datac
+     27.777      0.281 FF  CELL  Fetch|g_RegJump|\G_NBit_MUX:12:MUXI|o_O~0|combout
+     28.014      0.237 FF    IC  Fetch|g_RegJump|\G_NBit_MUX:12:MUXI|o_O~1|datac
+     28.295      0.281 FF  CELL  Fetch|g_RegJump|\G_NBit_MUX:12:MUXI|o_O~1|combout
+     28.546      0.251 FF    IC  Fetch|g_zeroflag|Equal0~11|datad
+     28.671      0.125 FF  CELL  Fetch|g_zeroflag|Equal0~11|combout
+     29.354      0.683 FF    IC  Fetch|g_zeroflag|Equal0~14|datab
+     29.704      0.350 FF  CELL  Fetch|g_zeroflag|Equal0~14|combout
+     29.939      0.235 FF    IC  Fetch|g_zeroflag|Equal0~16|datac
+     30.220      0.281 FF  CELL  Fetch|g_zeroflag|Equal0~16|combout
+     30.490      0.270 FF    IC  Fetch|g_zeroflag|Equal0~17|datab
+     30.840      0.350 FF  CELL  Fetch|g_zeroflag|Equal0~17|combout
+     31.079      0.239 FF    IC  PC|g_pc|\NBit_DFF:1:dffi|s_Q~0|datad
+     31.204      0.125 FF  CELL  PC|g_pc|\NBit_DFF:1:dffi|s_Q~0|combout
+     31.431      0.227 FF    IC  PC|g_pc|\NBit_DFF:1:dffi|s_Q~1|datad
+     31.581      0.150 FR  CELL  PC|g_pc|\NBit_DFF:1:dffi|s_Q~1|combout
+     31.826      0.245 RR    IC  PC|g_pc|\NBit_DFF:1:dffi|s_Q|ena
+     32.534      0.708 RR  CELL  PC_Module:PC|N_Reg:g_pc|neg_dffg:\NBit_DFF:1:dffi|s_Q
+ Data Required Path:
+ Total (ns)  Incr (ns)     Type  Element
+ ==========  ========= ==  ====  ===================================
+     30.000     30.000           latch edge time
+     33.018      3.018  F        clock network delay
+     33.051      0.033           clock pessimism removed
+     33.031     -0.020           clock uncertainty
+     33.049      0.018     uTsu  PC_Module:PC|N_Reg:g_pc|neg_dffg:\NBit_DFF:1:dffi|s_Q
+ Data Arrival Time  :    32.534
+ Data Required Time :    33.049
+ Slack              :     0.515
+ ===================================================================
