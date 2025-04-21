@@ -538,7 +538,23 @@ begin
   );
   
 
+Fetch: Fetchmodule
+port map(
+    i_pc          => s_IFPC,
+    i_instruction =>  s_IFInst(25 downto 0),
+    i_imm       =>  s_extended,
+    i_branch    => s_branch, 
+    i_zero      => s_zeroFlagBranch , 
+    i_jump      => s_jump,
+    i_RegJump   => s_RegJump,
+    i_BNE       => s_BranchBNE,
+    i_rs        => s_rs,
+    o_pcSrc     => s_pcSrc,
+    o_pc        => s_JBSrc
+);
+
 ---------------------------------------------------------------------------------
+
 controlModule: control
 port map(
     i_Opcode => s_IFInst (31 downto 26),
@@ -562,46 +578,35 @@ port map(
     o_Branch    => s_branch
 );
 
-Fetch: Fetchmodule
-port map(
-    i_pc          => s_IFPC,
-    i_instruction =>  s_IFInst(25 downto 0),
-    i_imm       =>  s_extended,
-    i_branch    => s_branch, 
-    i_zero      => s_zeroFlagBranch , 
-    i_jump      => s_jump,
-    i_RegJump   => s_RegJump,
-    i_BNE       => s_BranchBNE,
-    i_rs        => s_rs,
-    o_pcSrc     => s_pcSrc,
-    o_pc        => s_JBSrc
-);
 
-
-ForwardA_compare : mux4to1_32bit
-port map(
-    i_data0 => s_rs,
-    i_data1 => s_EXalu,
-    i_data2 => s_RegWrData,
-    i_data3 =>  s_ALUDATA,
-    i_sel   =>  s_forwardA2Control,
-    o_data  =>  s_forwardA2
-);
-
-ForwardB_compare : mux4to1_32bit
-port map(
-    i_data0 => s_rt,
-    i_data1 => s_EXalu,
-    i_data2 => s_RegWrData,
-    i_data3 =>  s_ALUDATA,
-    i_sel   =>  s_forwardB2Control,
-    o_data  =>  s_forwardB2
+HazardUnit : hazzardDetection
+port map (
+  i_rs          => s_IFInst(25 downto 21),
+  i_rt          => s_IFInst(20 downto 16),
+  i_Opcode      => s_IDInst (31 downto 26),
+  i_OpcodeIF    => s_IFInst (31 downto 26),
+  i_idrt        => s_IDInst(20 downto 16),
+  i_exrd        => s_exrd,
+  i_memrd        => s_memRD,
+  i_wbrd        => s_wbrd,
+  i_regjump     => s_RegJump,
+  i_jump        => s_pcSrc,
+  i_branchTaken => s_pcSrc,
+  i_branch      => s_branch,
+  i_idwe        => s_IDControl(8),
+  i_exwe        => s_EXControl(8),
+  i_wbwe        => s_WBControl(8),
+  o_pcWE        => s_pcWEHazard,
+  o_ifWE        => s_ifWEHazard,
+  o_flush       => s_flush,
+  o_stallsw     => s_stallsw,
+  o_controlZero => s_controlZero
 );
 
 g_xor : xor_32
 port MAP(
-    i_A => s_forwardA2,
-    i_B => s_forwardB2,
+    i_A => s_rs,
+    i_B => s_rt,
     o_F => s_xor 
 );
 
@@ -866,14 +871,30 @@ port map (
     s_DMemAddr <= s_EXalu;
     oALUOut <= s_EXalu;
 
-  -- MEMdataMUX : mux2t1_N
-  --   port map(
-  --     i_S          => s_forwardmem,
-  --     i_D0         => s_EXrt,
-  --     i_D1         => s_muxMemAlu,
-  --     o_O          => s_DMemData
-  --   );
-
+  ForwarUnit : forward_unit
+  port map(
+    i_rs        => s_IDInst(25 downto 21),
+    i_rt        => s_IDInst(20 downto 16),
+    i_idRS      => s_IFInst(25 downto 21),
+    i_idRT      => s_IFInst(20 downto 16),
+    i_memRT     => s_EXInst(20 downto 16),
+    i_memrd     => s_memRD,
+    i_wbrd      => s_wbrd,
+    i_exrd      => s_exrd ,
+    i_IDWE      => s_IDControl(8),
+    i_exWE      => s_EXControl(8),
+    i_wbWE      => s_WBControl(8),
+    i_jalwe       => s_WBControl(10),
+    i_jalex       => s_EXControl(10),
+    i_jalid       => s_IDControl(10),
+    o_forwardMem => s_forwardmem,
+    o_forwardA  => s_forwardAControl,
+    o_forwardB  => s_forwardBControl,
+    o_forwardAReg => s_regSLCA,
+    o_forwardBReg => s_regSLCB,
+    o_forwardA2 => s_forwardA2Control,
+    o_forwardB2 => s_forwardB2Control
+  );
   WBRegMEMout : N_Reg
     port map (
       i_CLK        => iCLK,
@@ -988,54 +1009,6 @@ port map (
   o_O          => s_exrd 
 ); 
 
-ForwarUnit : forward_unit
-port map(
-  i_rs        => s_IDInst(25 downto 21),
-  i_rt        => s_IDInst(20 downto 16),
-  i_idRS      => s_IFInst(25 downto 21),
-  i_idRT      => s_IFInst(20 downto 16),
-  i_memRT     => s_EXInst(20 downto 16),
-  i_memrd     => s_memRD,
-  i_wbrd      => s_wbrd,
-  i_exrd      => s_exrd ,
-  i_IDWE      => s_IDControl(8),
-  i_exWE      => s_EXControl(8),
-  i_wbWE      => s_WBControl(8),
-  i_jalwe       => s_WBControl(10),
-  i_jalex       => s_EXControl(10),
-  i_jalid       => s_IDControl(10),
-  o_forwardMem => s_forwardmem,
-  o_forwardA  => s_forwardAControl,
-  o_forwardB  => s_forwardBControl,
-  o_forwardAReg => s_regSLCA,
-  o_forwardBReg => s_regSLCB,
-  o_forwardA2 => s_forwardA2Control,
-  o_forwardB2 => s_forwardB2Control
-);
-
-HazardUnit : hazzardDetection
-port map (
-  i_rs          => s_IFInst(25 downto 21),
-  i_rt          => s_IFInst(20 downto 16),
-  i_Opcode      => s_IDInst (31 downto 26),
-  i_OpcodeIF    => s_IFInst (31 downto 26),
-  i_idrt        => s_IDInst(20 downto 16),
-  i_exrd        => s_exrd,
-  i_memrd        => s_memRD,
-  i_wbrd        => s_wbrd,
-  i_regjump     => s_RegJump,
-  i_jump        => s_pcSrc,
-  i_branchTaken => s_pcSrc,
-  i_branch      => s_branch,
-  i_idwe        => s_IDControl(8),
-  i_exwe        => s_EXControl(8),
-  i_wbwe        => s_WBControl(8),
-  o_pcWE        => s_pcWEHazard,
-  o_ifWE        => s_ifWEHazard,
-  o_flush       => s_flush,
-  o_stallsw     => s_stallsw,
-  o_controlZero => s_controlZero
-);
 
 s_halt <=  s_WBControl(6);
 s_Ovfl <= s_WBControl(1);

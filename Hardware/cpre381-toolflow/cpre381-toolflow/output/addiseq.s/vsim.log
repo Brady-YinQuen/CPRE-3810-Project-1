@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2024.2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 09:57:47 on Apr 21,2025
+# Start time: 10:54:50 on Apr 21,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
@@ -48,16 +48,16 @@ Reading pref.tcl
 # Loading work.xorg2(dataflow)#1
 # Loading work.andg2(dataflow)#1
 # Loading work.org2(dataflow)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.control(dataflow)#1
 # Loading work.fetchmodule(structural)#1
 # Loading work.sll26bto28b(dataflow)#1
 # Loading work.append(dataflow)#1
 # Loading work.sll2_32bit(dataflow)#1
 # Loading work.xor_32(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
 # Loading work.zeroflag(dataflow)#1
-# Loading work.mux4to1_32bit(behavioral)#1
+# Loading work.control(dataflow)#1
+# Loading work.hazzarddetection(dataflow)#1
 # Loading work.extender(dataflow)#1
 # Loading work.mux2to1_5bit(structural)#1
 # Loading work.my_package
@@ -66,16 +66,16 @@ Reading pref.tcl
 # Loading work.n_reg(structural)#2
 # Loading work.dffg(mixed)#2
 # Loading work.mux32t1(dataflow)#1
+# Loading work.mux4to1_32bit(behavioral)#1
 # Loading work.control_package
 # Loading work.alu(structural)#1
 # Loading work.and_32(behavioral)#1
 # Loading work.or_32(behavioral)#1
 # Loading work.shifter(structural)#1
 # Loading work.mux16t1_32bit(dataflow)#1
+# Loading work.forward_unit(dataflow)#1
 # Loading work.lh_module(behavioral)#1
 # Loading work.lb_module(behavioral)#1
-# Loading work.forward_unit(dataflow)#1
-# Loading work.hazzarddetection(dataflow)#1
 # ** Note: (vsim-8900) Creating design debug database vsim.dbg.
 # do modelsim_framework.do
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -106,13 +106,13 @@ Reading pref.tcl
 #    Time: 320 ns  Iteration: 3  Instance: /tb/MyMips/MainRegister/g_mux2
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 340 ns  Iteration: 5  Instance: /tb/MyMips/MainALU/g_shifter
-# ** Note: Data structure takes 62510088 bytes of memory
-#          Process time 0.10 seconds
+# ** Note: Data structure takes 62116848 bytes of memory
+#          Process time 0.11 seconds
 #          stop
 #    Time: 380 ns  Iteration: 1  Instance: /tb
-# Break in Process P_DUMP_STATE at /home/choong/CPRE381/Hardware/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# Stopped at /home/choong/CPRE381/Hardware/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 09:57:49 on Apr 21,2025, Elapsed time: 0:00:02
+# Break in Process P_DUMP_STATE at /home/choong/CPRE381/Hardware (copy)/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# Stopped at /home/choong/CPRE381/Hardware (copy)/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
+# End time: 10:54:53 on Apr 21,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 15
 Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
