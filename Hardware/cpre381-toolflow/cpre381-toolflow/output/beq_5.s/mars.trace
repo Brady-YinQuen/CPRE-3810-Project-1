@@ -1,0 +1,35 @@
+[inst #1] addi $9,$0,1
+Register Write to Reg: 0x09 Val: 0x00000001
+[inst #2] beq $9,$0,-1
+[inst #3] beq $9,$1,-2
+[inst #4] beq $9,$2,-3
+[inst #5] beq $9,$4,-4
+[inst #6] beq $9,$5,-5
+[inst #7] beq $9,$6,-6
+[inst #8] beq $9,$7,-7
+[inst #9] beq $9,$8,-8
+[inst #10] beq $9,$10,-9
+[inst #11] beq $9,$11,-10
+[inst #12] beq $9,$12,-11
+[inst #13] beq $9,$13,-12
+[inst #14] beq $9,$14,-13
+[inst #15] beq $9,$15,-14
+[inst #16] beq $9,$16,-15
+[inst #17] beq $9,$17,-16
+[inst #18] beq $9,$18,-17
+[inst #19] beq $9,$19,-18
+[inst #20] beq $9,$20,-19
+[inst #21] beq $9,$21,-20
+[inst #22] beq $9,$22,-21
+[inst #23] beq $9,$23,-22
+[inst #24] beq $9,$24,-23
+[inst #25] beq $9,$25,-24
+[inst #26] beq $9,$26,-25
+[inst #27] beq $9,$27,-26
+[inst #28] beq $9,$28,-27
+[inst #29] beq $9,$29,-28
+[inst #30] beq $9,$30,-29
+[inst #31] beq $9,$31,-30
+[inst #32] beq $9,$9,1
+[inst #33] halt 
+

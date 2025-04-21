@@ -1,0 +1,120 @@
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+Start time: 08:17:20 on Apr 21,2025
+vcom -2008 -work internal/ModelSimContainer/work proj/src/MIPS_types.vhd internal/testpy/tb.vhd proj/src/MIPS_types.vhd proj/src/TopLevel/ZeroFlag.vhd proj/src/TopLevel/mux16t1_32bit.vhd proj/src/TopLevel/control.vhd proj/src/TopLevel/mux2t1_N.vhd proj/src/TopLevel/control_package.vhd proj/src/TopLevel/5BitTo32Decoder.vhd proj/src/TopLevel/org2.vhd proj/src/TopLevel/dffg.vhd proj/src/TopLevel/shifter.vhd proj/src/TopLevel/xor_32.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/N_decoder.vhd proj/src/TopLevel/P_Reg.vhd proj/src/TopLevel/ALU.vhd proj/src/TopLevel/xorg2.vhd proj/src/TopLevel/lb_module.vhd proj/src/TopLevel/PC_Module.vhd proj/src/TopLevel/MySecondMIPSDatapath.vhd proj/src/TopLevel/addsub_i.vhd proj/src/TopLevel/mux2to1_5bit.vhd proj/src/TopLevel/or_32.vhd proj/src/TopLevel/forward_unit.vhd proj/src/TopLevel/Adder_N.vhd proj/src/TopLevel/neg_dffg.vhd proj/src/TopLevel/N_Reg.vhd proj/src/TopLevel/nAdder_Sub.vhd proj/src/TopLevel/shmtTo32Decoder.vhd proj/src/TopLevel/hazardDetection.vhd proj/src/TopLevel/mux4to1_32bit.vhd proj/src/TopLevel/mux2to1.vhd proj/src/TopLevel/andg2.vhd proj/src/TopLevel/my_package.vhd proj/src/TopLevel/Fetchmodule.vhd proj/src/TopLevel/mux32t1.vhd proj/src/TopLevel/lh_module.vhd proj/src/TopLevel/and_32.vhd proj/src/TopLevel/MIP_REG.vhd proj/src/TopLevel/Adder.vhd proj/src/TopLevel/OnesComp.vhd proj/src/TopLevel/Append.vhd proj/src/TopLevel/SLL26bTo28b.vhd proj/src/TopLevel/invg.vhd proj/src/TopLevel/MIPS_Processor.vhd proj/src/TopLevel/Extender.vhd proj/src/TopLevel/Adder_4.vhd proj/src/TopLevel/mux8to1_32bit.vhd proj/src/TopLevel/SLL2_32bit.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/MIPS_types.vhd(15): (vcom-1615) Existing package 'MIPS_types' at line 15 will be overwritten.
+-- Compiling package MIPS_types
+** Warning: proj/src/MIPS_types.vhd(29): (vcom-1615) Existing package body 'MIPS_types(body)' at line 29 will be overwritten.
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ZeroFlag
+-- Compiling architecture Dataflow of ZeroFlag
+-- Loading package NUMERIC_STD
+-- Loading package control_package
+-- Compiling entity mux16t1_32bit
+-- Compiling architecture dataflow of mux16t1_32bit
+-- Compiling entity control
+-- Compiling architecture dataflow of control
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling package control_package
+-- Compiling entity shmtTo32Decoder
+-- Compiling architecture dataflow of shmtTo32Decoder
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity Shifter
+-- Compiling architecture structural of Shifter
+-- Compiling entity xor_32
+-- Compiling architecture behavioral of xor_32
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Compiling entity N_decoder
+-- Compiling architecture dataflow of N_decoder
+-- Compiling entity P_Reg
+-- Compiling architecture structural of P_Reg
+-- Loading package control_package
+-- Compiling entity ALU
+-- Compiling architecture structural of ALU
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity lb_module
+-- Compiling architecture Behavioral of lb_module
+-- Compiling entity PC_Module
+-- Compiling architecture structural of PC_Module
+-- Loading package my_package
+-- Compiling entity MySecondMIPSDatapath
+-- Compiling architecture structural of MySecondMIPSDatapath
+-- Compiling entity addsub_i
+-- Compiling architecture structural of addsub_i
+-- Compiling entity mux2to1_5bit
+-- Compiling architecture structural of mux2to1_5bit
+-- Compiling entity or_32
+-- Compiling architecture behavioral of or_32
+-- Compiling entity forward_unit
+-- Compiling architecture dataflow of forward_unit
+-- Compiling entity Adder_N
+-- Compiling architecture structural of Adder_N
+-- Compiling entity neg_dffg
+-- Compiling architecture mixed of neg_dffg
+-- Compiling entity N_Reg
+-- Compiling architecture structural of N_Reg
+-- Compiling entity nAdder_Sub
+-- Compiling architecture structural of nAdder_Sub
+-- Compiling entity hazzardDetection
+-- Compiling architecture dataflow of hazzardDetection
+-- Compiling entity mux4to1_32bit
+-- Compiling architecture Behavioral of mux4to1_32bit
+-- Compiling entity mux2to1
+-- Compiling architecture dataflow of mux2to1
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling package my_package
+-- Compiling entity Fetchmodule
+-- Compiling architecture structural of Fetchmodule
+-- Loading package my_package
+-- Compiling entity mux32t1
+-- Compiling architecture dataflow of mux32t1
+-- Compiling entity lh_module
+-- Compiling architecture Behavioral of lh_module
+-- Compiling entity and_32
+-- Compiling architecture behavioral of and_32
+-- Compiling entity MIP_REG
+-- Compiling architecture structural of MIP_REG
+-- Compiling entity Adder
+-- Compiling architecture structure of Adder
+-- Compiling entity OnesComp
+-- Compiling architecture structural of OnesComp
+-- Compiling entity Append
+-- Compiling architecture dataflow of Append
+-- Compiling entity SLL26bTo28b
+-- Compiling architecture dataflow of SLL26bTo28b
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Loading package MIPS_types
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+-- Compiling entity Extender
+-- Compiling architecture dataflow of Extender
+** Warning: proj/src/TopLevel/Extender.vhd(14): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+** Warning: proj/src/TopLevel/Extender.vhd(16): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+-- Compiling entity Adder_4
+-- Compiling architecture structural of Adder_4
+-- Compiling entity mux8to1_32bit
+-- Compiling architecture Behavioral of mux8to1_32bit
+-- Compiling entity SLL2_32bit
+-- Compiling architecture dataflow of SLL2_32bit
+End time: 08:17:20 on Apr 21,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 4

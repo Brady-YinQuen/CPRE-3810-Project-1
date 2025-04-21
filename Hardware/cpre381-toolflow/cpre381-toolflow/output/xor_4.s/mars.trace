@@ -1,0 +1,34 @@
+[inst #1] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #2] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #3] addu $16,$0,$1
+Register Write to Reg: 0x10 Val: 0x0000FFFF
+[inst #4] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #5] ori $1,$1,65535
+Register Write to Reg: 0x01 Val: 0x0000FFFF
+[inst #6] addu $17,$0,$1
+Register Write to Reg: 0x11 Val: 0x0000FFFF
+[inst #7] xor $19,$16,$17
+Register Write to Reg: 0x13 Val: 0x00000000
+[inst #8] xor $20,$17,$16
+Register Write to Reg: 0x14 Val: 0x00000000
+[inst #9] addiu $16,$0,0
+Register Write to Reg: 0x10 Val: 0x00000000
+[inst #10] xor $19,$17,$16
+Register Write to Reg: 0x13 Val: 0x0000FFFF
+[inst #11] xor $20,$17,$16
+Register Write to Reg: 0x14 Val: 0x0000FFFF
+[inst #12] addi $16,$16,-1
+Register Write to Reg: 0x10 Val: 0xFFFFFFFF
+[inst #13] lui $1,0
+Register Write to Reg: 0x01 Val: 0x00000000
+[inst #14] ori $1,$1,48059
+Register Write to Reg: 0x01 Val: 0x0000BBBB
+[inst #15] addu $17,$0,$1
+Register Write to Reg: 0x11 Val: 0x0000BBBB
+[inst #16] xor $21,$17,$16
+Register Write to Reg: 0x15 Val: 0xFFFF4444
+[inst #17] halt 
+
