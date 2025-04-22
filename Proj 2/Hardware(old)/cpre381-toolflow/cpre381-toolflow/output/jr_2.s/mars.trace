@@ -1,0 +1,17 @@
+[inst #1] lui $1,64
+Register Write to Reg: 0x01 Val: 0x00400000
+[inst #2] ori $9,$1,12
+Register Write to Reg: 0x09 Val: 0x0040000C
+[inst #3] jr $9
+[inst #4] lui $1,64
+Register Write to Reg: 0x01 Val: 0x00400000
+[inst #5] ori $9,$1,24
+Register Write to Reg: 0x09 Val: 0x00400018
+[inst #6] jr $9
+[inst #7] lui $1,64
+Register Write to Reg: 0x01 Val: 0x00400000
+[inst #8] ori $9,$1,36
+Register Write to Reg: 0x09 Val: 0x00400024
+[inst #9] jr $9
+[inst #10] halt 
+

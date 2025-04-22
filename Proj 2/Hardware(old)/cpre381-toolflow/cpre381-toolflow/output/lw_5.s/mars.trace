@@ -1,0 +1,16 @@
+[inst #1] lui $8,4097
+Register Write to Reg: 0x08 Val: 0x10010000
+[inst #2] addiu $8,$8,0
+Register Write to Reg: 0x08 Val: 0x10010000
+[inst #3] lw $16,0($8)
+Register Write to Reg: 0x10 Val: 0x12345678
+[inst #4] lw $17,4($8)
+Register Write to Reg: 0x11 Val: 0xDEADBEEF
+[inst #5] addiu $8,$8,16
+Register Write to Reg: 0x08 Val: 0x10010010
+[inst #6] lw $18,-8($8)
+Register Write to Reg: 0x12 Val: 0xCAFECAFE
+[inst #7] lw $19,-4($8)
+Register Write to Reg: 0x13 Val: 0xFFFFFFFF
+[inst #8] halt 
+

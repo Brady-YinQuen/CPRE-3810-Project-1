@@ -1,0 +1,12 @@
+[inst #1] lui $8,4660
+Register Write to Reg: 0x08 Val: 0x12340000
+[inst #2] addi $8,$8,22136
+Register Write to Reg: 0x08 Val: 0x12345678
+[inst #3] lui $9,4660
+Register Write to Reg: 0x09 Val: 0x12340000
+[inst #4] addi $9,$9,22136
+Register Write to Reg: 0x09 Val: 0x12345678
+[inst #5] and $10,$8,$9
+Register Write to Reg: 0x0A Val: 0x12345678
+[inst #6] halt 
+
