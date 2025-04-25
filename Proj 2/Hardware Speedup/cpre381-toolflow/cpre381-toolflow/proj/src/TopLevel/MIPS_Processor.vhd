@@ -548,7 +548,7 @@ port map(
     i_jump      => s_jump,
     i_RegJump   => s_RegJump,
     i_BNE       => s_BranchBNE,
-    i_rs        => s_rs,
+    i_rs        => s_regSLCA_OUT,
     o_pcSrc     => s_pcSrc,
     o_pc        => s_JBSrc
 );
@@ -675,7 +675,7 @@ dataMUXRS : mux2t1_N
 port map(
   i_S          => s_regSLCA,
   i_D0         => s_rs,
-  i_D1         => s_muxMemAlu,
+  i_D1         => s_RegWrData,
   o_O          => s_regSLCA_OUT
 );
 
@@ -683,7 +683,7 @@ dataMUXRt : mux2t1_N
 port map(
   i_S          => s_regSLCB,
   i_D0         => s_rt,
-  i_D1         => s_muxMemAlu,
+  i_D1         => s_RegWrData,
   o_O          => s_regSLCB_OUT
 );
 
