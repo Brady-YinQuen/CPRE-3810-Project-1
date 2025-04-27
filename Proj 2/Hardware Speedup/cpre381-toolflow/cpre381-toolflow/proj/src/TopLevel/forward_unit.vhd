@@ -66,9 +66,9 @@ begin
 
     o_forwardA <= "00" when ((i_memrd = "00000" and rs_memrd_and_exwe = '1')or (i_wbrd = "00000" and rs_wbrd_and_wbwe = '1')) or 
                             (rs_memrd_and_exwe = '0' and rs_wbrd_and_wbwe = '0') else
-                  "01" when (rs_memrd_and_exwe = '1' and rs_wbrd_and_wbwe = '0') or 
-                            (rs_memrd_and_exwe = '1' and rs_wbrd_and_wbwe = '1') else
-                  "11" when (rs_memrd_and_exwe = '1' and memrd_jal = "11111") else
+                  "01" when (rs_memrd_and_exwe = '1' and rs_wbrd_and_wbwe = '0' and i_jalex = '0' ) or
+                            (rs_memrd_and_exwe = '1' and rs_wbrd_and_wbwe = '1' and i_jalex = '0' ) else
+                  "11" when (rs_memrd_and_exwe = '1' and memrd_jal = "11111" and i_jalex = '1' ) else
                   "10" when (rs_memrd_and_exwe = '0' and rs_wbrd_and_wbwe = '1') else
                   "01";  -- default to EX forwarding
 

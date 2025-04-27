@@ -605,8 +605,8 @@ port map (
 
 g_xor : xor_32
 port MAP(
-    i_A => s_rs,
-    i_B => s_rt,
+    i_A => s_regSLCA_OUT,
+    i_B => s_regSLCB_OUT,
     o_F => s_xor 
 );
 

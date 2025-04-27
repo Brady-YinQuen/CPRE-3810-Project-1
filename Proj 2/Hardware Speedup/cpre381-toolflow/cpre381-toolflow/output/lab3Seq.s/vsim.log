@@ -3,7 +3,7 @@ Reading pref.tcl
 # 2024.2
 
 # vsim -postsimdataflow -debugdb -c -voptargs=""+acc"" tb -do "modelsim_framework.do" -gOUTPUT_TRACE=ms.trace 
-# Start time: 19:51:11 on Apr 23,2025
+# Start time: 15:06:01 on Apr 25,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-8611) Generating debug db.
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
@@ -111,12 +111,12 @@ Reading pref.tcl
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 520 ns  Iteration: 3  Instance: /tb/MyMips/MainRegister/g_mux2
 # ** Note: Data structure takes 61101112 bytes of memory
-#          Process time 0.10 seconds
+#          Process time 0.09 seconds
 #          stop
 #    Time: 540 ns  Iteration: 1  Instance: /tb
 # Break in Process P_DUMP_STATE at /home/choong/CPRE381/CPRE-3810-Project-1/Proj 2/Hardware Speedup/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
 # Stopped at /home/choong/CPRE381/CPRE-3810-Project-1/Proj 2/Hardware Speedup/cpre381-toolflow/cpre381-toolflow/internal/testpy/tb.vhd line 150
-# End time: 19:51:13 on Apr 23,2025, Elapsed time: 0:00:02
+# End time: 15:06:03 on Apr 25,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 19
 Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.

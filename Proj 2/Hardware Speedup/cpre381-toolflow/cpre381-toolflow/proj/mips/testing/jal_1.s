@@ -20,11 +20,6 @@ main:
 
 
     CORRECT: addiu $t0, $0, 1 #Set $t0 to 1 when $ra is stored correctly by jal
-
-nop
-nop
-nop
-
     
     Exit:
     # End Test

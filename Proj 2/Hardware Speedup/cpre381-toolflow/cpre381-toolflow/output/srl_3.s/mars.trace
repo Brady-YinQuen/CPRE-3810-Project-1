@@ -1,0 +1,6 @@
+[inst #1] addiu $8,$0,-1
+Register Write to Reg: 0x08 Val: 0xFFFFFFFF
+[inst #2] srl $9,$8,4
+Register Write to Reg: 0x09 Val: 0x0FFFFFFF
+[inst #3] halt 
+
